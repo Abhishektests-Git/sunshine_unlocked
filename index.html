@@ -11,9 +11,11 @@
     <title>For Sakshi ♡</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
     <style>
-
       :root {
         --pink: #f6a8c5;
         --deep: #c94f80;
@@ -194,7 +196,8 @@
         display: block;
         line-height: 1;
         pointer-events: none;
-        animation: blossomSway var(--sway-dur, 2.6s) ease-in-out infinite alternate;
+        animation: blossomSway var(--sway-dur, 2.6s) ease-in-out infinite
+          alternate;
         will-change: transform;
       }
       @keyframes blossomFall {
@@ -254,7 +257,12 @@
         align-items: center;
         justify-content: center;
         background:
-          radial-gradient(ellipse at center, rgba(255, 243, 247, 0.7) 0%, rgba(255, 243, 247, 0.55) 45%, rgba(255, 243, 247, 0.2) 100%),
+          radial-gradient(
+            ellipse at center,
+            rgba(255, 243, 247, 0.7) 0%,
+            rgba(255, 243, 247, 0.55) 45%,
+            rgba(255, 243, 247, 0.2) 100%
+          ),
           url("assets/hero-bg.webp") center 25% / cover no-repeat,
           #f8c6d9;
         position: relative;
@@ -263,7 +271,12 @@
       @media (max-width: 800px) {
         .hero {
           background:
-            radial-gradient(ellipse at center, rgba(255, 243, 247, 0.7) 0%, rgba(255, 243, 247, 0.55) 45%, rgba(255, 243, 247, 0.2) 100%),
+            radial-gradient(
+              ellipse at center,
+              rgba(255, 243, 247, 0.7) 0%,
+              rgba(255, 243, 247, 0.55) 45%,
+              rgba(255, 243, 247, 0.2) 100%
+            ),
             url("assets/hero-bg-800.webp") 40% top / cover no-repeat,
             #f8c6d9;
         }
@@ -456,12 +469,36 @@
         inset: 0;
         object-fit: cover;
         -webkit-mask-image:
-          linear-gradient(to right, transparent 0, #000 14px, #000 calc(100% - 14px), transparent 100%),
-          linear-gradient(to bottom, transparent 0, #000 14px, #000 calc(100% - 14px), transparent 100%);
+          linear-gradient(
+            to right,
+            transparent 0,
+            #000 14px,
+            #000 calc(100% - 14px),
+            transparent 100%
+          ),
+          linear-gradient(
+            to bottom,
+            transparent 0,
+            #000 14px,
+            #000 calc(100% - 14px),
+            transparent 100%
+          );
         -webkit-mask-composite: source-in;
         mask-image:
-          linear-gradient(to right, transparent 0, #000 14px, #000 calc(100% - 14px), transparent 100%),
-          linear-gradient(to bottom, transparent 0, #000 14px, #000 calc(100% - 14px), transparent 100%);
+          linear-gradient(
+            to right,
+            transparent 0,
+            #000 14px,
+            #000 calc(100% - 14px),
+            transparent 100%
+          ),
+          linear-gradient(
+            to bottom,
+            transparent 0,
+            #000 14px,
+            #000 calc(100% - 14px),
+            transparent 100%
+          );
         mask-composite: intersect;
       }
       .photo span {
@@ -533,8 +570,16 @@
         position: relative;
         overflow: hidden;
         background:
-          radial-gradient(circle at 12% 18%, rgba(255, 255, 255, 0.82) 0 5%, transparent 19%),
-          radial-gradient(circle at 88% 82%, rgba(255, 255, 255, 0.66) 0 4%, transparent 18%),
+          radial-gradient(
+            circle at 12% 18%,
+            rgba(255, 255, 255, 0.82) 0 5%,
+            transparent 19%
+          ),
+          radial-gradient(
+            circle at 88% 82%,
+            rgba(255, 255, 255, 0.66) 0 4%,
+            transparent 18%
+          ),
           linear-gradient(145deg, #f2e9f7 0%, #fce8ef 48%, #ffeef3 100%);
         border-top: 1px solid #e7c9df;
         /* No bottom border: the last section inside this wrapper is
@@ -1226,8 +1271,7 @@
         will-change: transform, opacity;
       }
       .slides .sl.is-center {
-        filter: brightness(1)
-          drop-shadow(0 22px 34px rgba(185, 90, 130, 0.28))
+        filter: brightness(1) drop-shadow(0 22px 34px rgba(185, 90, 130, 0.28))
           drop-shadow(0 6px 16px rgba(185, 90, 130, 0.14));
       }
       .slides .sl.is-side {
@@ -1860,23 +1904,89 @@
       }
 
       /* ---- PDR fixes: accessibility, slideshow progress, reduced motion ---- */
-      :focus-visible { outline: 3px solid #c94f80; outline-offset: 3px; border-radius: 8px; }
-      .countdown { flex-wrap: wrap; }
-      .flip, .coupon, .lc, .slides { -webkit-tap-highlight-color: transparent; }
-      .candle-status { font-size: 14px; color: #a3335f; min-height: 24px; margin: 6px auto 0; max-width: 440px; }
-      .slide-ui { max-width: 520px; margin: 12px auto 0; }
-      .slide-progress { height: 6px; border-radius: 6px; background: #f3cfdd; overflow: hidden; }
-      .slide-progress i { display: block; height: 100%; width: 0; background: #c94f80; border-radius: 6px; transition: width .4s ease; }
-      .slide-dots { display: flex; gap: 6px; justify-content: center; margin-top: 10px; flex-wrap: wrap; }
-      .slide-dots button { width: 10px; height: 10px; border-radius: 50%; border: 1px solid #c94f80; background: #fff; padding: 0; }
-      .slide-dots button.on { background: #c94f80; }
-      .gift[hidden] { display: none; }
+      :focus-visible {
+        outline: 3px solid #c94f80;
+        outline-offset: 3px;
+        border-radius: 8px;
+      }
+      .countdown {
+        flex-wrap: wrap;
+      }
+      .flip,
+      .coupon,
+      .lc,
+      .slides {
+        -webkit-tap-highlight-color: transparent;
+      }
+      .candle-status {
+        font-size: 14px;
+        color: #a3335f;
+        min-height: 24px;
+        margin: 6px auto 0;
+        max-width: 440px;
+      }
+      .slide-ui {
+        max-width: 520px;
+        margin: 12px auto 0;
+      }
+      .slide-progress {
+        height: 6px;
+        border-radius: 6px;
+        background: #f3cfdd;
+        overflow: hidden;
+      }
+      .slide-progress i {
+        display: block;
+        height: 100%;
+        width: 0;
+        background: #c94f80;
+        border-radius: 6px;
+        transition: width 0.4s ease;
+      }
+      .slide-dots {
+        display: flex;
+        gap: 6px;
+        justify-content: center;
+        margin-top: 10px;
+        flex-wrap: wrap;
+      }
+      .slide-dots button {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: 1px solid #c94f80;
+        background: #fff;
+        padding: 0;
+      }
+      .slide-dots button.on {
+        background: #c94f80;
+      }
+      .gift[hidden] {
+        display: none;
+      }
       @media (prefers-reduced-motion: reduce) {
-        html { scroll-behavior: auto; }
-        .flower, .heart, .gift, .award .ic { animation: none !important; }
-        .reveal { transition: none; opacity: 1; transform: none; }
-        .flip-in, .slides .sl, .lc .lc-body { transition-duration: 0.01ms !important; }
-        .burst { display: none; }
+        html {
+          scroll-behavior: auto;
+        }
+        .flower,
+        .heart,
+        .gift,
+        .award .ic {
+          animation: none !important;
+        }
+        .reveal {
+          transition: none;
+          opacity: 1;
+          transform: none;
+        }
+        .flip-in,
+        .slides .sl,
+        .lc .lc-body {
+          transition-duration: 0.01ms !important;
+        }
+        .burst {
+          display: none;
+        }
       }
       /* ---- mobile & tablet polish ---- */
       body {
@@ -2323,18 +2433,58 @@
            small phone ≤400 · phone 401–640 · tablet portrait
            641–900 · tablet landscape 901–1180 · desktop ≥1181
          ============================================================ */
-      html, body { overflow-x: clip; max-width: 100%; }
-      body { width: 100%; }
-      *, *::before, *::after { box-sizing: border-box; }
-      img, svg, canvas, video { max-width: 100%; }
-      section, .hero, #intro, .final { max-width: 100vw; }
-      .content, .soft-card, .q, .lc, .coupons, .tl,
-      .gallery, .cards, .favs, .awards, .nywishes {
+      html,
+      body {
+        overflow-x: clip;
+        max-width: 100%;
+      }
+      body {
+        width: 100%;
+      }
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      img,
+      svg,
+      canvas,
+      video {
+        max-width: 100%;
+      }
+      section,
+      .hero,
+      #intro,
+      .final {
+        max-width: 100vw;
+      }
+      .content,
+      .soft-card,
+      .q,
+      .lc,
+      .coupons,
+      .tl,
+      .gallery,
+      .cards,
+      .favs,
+      .awards,
+      .nywishes {
         min-width: 0;
       }
-      .gallery > *, .cards > *, .favs > *, .awards > *,
-      .nywishes > *, .coupons > * { min-width: 0; }
-      h1, h2, .big, .ec-text { overflow-wrap: break-word; }
+      .gallery > *,
+      .cards > *,
+      .favs > *,
+      .awards > *,
+      .nywishes > *,
+      .coupons > * {
+        min-width: 0;
+      }
+      h1,
+      h2,
+      .big,
+      .ec-text {
+        overflow-wrap: break-word;
+      }
 
       /* --- Confetti & balloons: viewport-fixed, never a source
          of horizontal scroll at any width --- */
@@ -2349,9 +2499,16 @@
         display: block;
         overflow: hidden;
       }
-      .balloon { max-width: 76px; }
-      #fallingFlowers { max-width: 100vw; overflow: hidden; }
-      .burst { max-width: 40px; }
+      .balloon {
+        max-width: 76px;
+      }
+      #fallingFlowers {
+        max-width: 100vw;
+        overflow: hidden;
+      }
+      .burst {
+        max-width: 40px;
+      }
 
       /* --- Entry candle overlay: the fixed layer is full-viewport
          by design (pointer-events:none, tap-through), the visible
@@ -2371,7 +2528,9 @@
         padding: 24px 20px 20px;
         overflow: visible;
       }
-      .ec-svg { width: clamp(138px, 40vw, 178px); }
+      .ec-svg {
+        width: clamp(138px, 40vw, 178px);
+      }
       .ec-text {
         font-size: clamp(26px, 6.2vw, 34px);
         max-width: 100%;
@@ -2386,7 +2545,10 @@
         width: max-content;
         overflow: hidden;
       }
-      .nav a { flex: 0 1 auto; min-height: 44px; }
+      .nav a {
+        flex: 0 1 auto;
+        min-height: 44px;
+      }
       .music {
         max-width: calc(100vw - 28px);
         white-space: nowrap;
@@ -2395,10 +2557,23 @@
       }
 
       /* --- Hero & countdowns (incl. single birthday tile) --- */
-      .hero { width: 100%; overflow: hidden; }
-      .hero h1, #intro h1 { max-width: 100%; }
-      .countdown { max-width: calc(100vw - 24px); margin-left: auto; margin-right: auto; }
-      #countdown .time, #tgBox .time { min-width: 0; }
+      .hero {
+        width: 100%;
+        overflow: hidden;
+      }
+      .hero h1,
+      #intro h1 {
+        max-width: 100%;
+      }
+      .countdown {
+        max-width: calc(100vw - 24px);
+        margin-left: auto;
+        margin-right: auto;
+      }
+      #countdown .time,
+      #tgBox .time {
+        min-width: 0;
+      }
       #countdown:has(.time:only-child) .time,
       #countdown .time:only-child {
         max-width: calc(100vw - 48px);
@@ -2407,8 +2582,15 @@
       }
 
       /* --- Our moments: stage, arrows, dots --- */
-      .slides { max-width: 100%; width: 100%; }
-      .slide-ui { max-width: min(520px, calc(100vw - 24px)); margin-left: auto; margin-right: auto; }
+      .slides {
+        max-width: 100%;
+        width: 100%;
+      }
+      .slide-ui {
+        max-width: min(520px, calc(100vw - 24px));
+        margin-left: auto;
+        margin-right: auto;
+      }
       .slide-dots {
         max-width: calc(100vw - 24px);
         margin-left: auto;
@@ -2416,79 +2598,188 @@
         flex-wrap: wrap;
         row-gap: 2px;
       }
-      .slide-dots button { flex: 0 0 30px; }
-      .slides .cap { max-width: calc(100vw - 24px); }
+      .slide-dots button {
+        flex: 0 0 30px;
+      }
+      .slides .cap {
+        max-width: calc(100vw - 24px);
+      }
 
       /* ---------- tablet portrait: 641–900px ---------- */
       @media (min-width: 641px) and (max-width: 900px) {
-        .ec-card { width: 360px; max-width: 360px; padding: 28px 30px 22px; }
-        .ec-svg { width: 186px; }
-        .ec-text { font-size: 34px; }
-        .nav a { padding: 10px 15px; font-size: 12.5px; }
-        .slides { max-width: 860px; }
-        .slide-dots { flex-wrap: nowrap; max-width: 100%; }
-        .slide-dots button { flex-basis: 28px; width: 28px; min-width: 28px; }
+        .ec-card {
+          width: 360px;
+          max-width: 360px;
+          padding: 28px 30px 22px;
+        }
+        .ec-svg {
+          width: 186px;
+        }
+        .ec-text {
+          font-size: 34px;
+        }
+        .nav a {
+          padding: 10px 15px;
+          font-size: 12.5px;
+        }
+        .slides {
+          max-width: 860px;
+        }
+        .slide-dots {
+          flex-wrap: nowrap;
+          max-width: 100%;
+        }
+        .slide-dots button {
+          flex-basis: 28px;
+          width: 28px;
+          min-width: 28px;
+        }
       }
 
       /* ---------- tablet landscape: 901–1180px ---------- */
       @media (min-width: 901px) and (max-width: 1180px) {
-        .ec-card { width: 380px; max-width: 380px; padding: 30px 34px 24px; }
-        .ec-svg { width: 196px; }
-        .ec-text { font-size: 35px; }
-        .nav a { padding: 10px 15px; }
-        .slide-dots { flex-wrap: nowrap; max-width: 100%; }
+        .ec-card {
+          width: 380px;
+          max-width: 380px;
+          padding: 30px 34px 24px;
+        }
+        .ec-svg {
+          width: 196px;
+        }
+        .ec-text {
+          font-size: 35px;
+        }
+        .nav a {
+          padding: 10px 15px;
+        }
+        .slide-dots {
+          flex-wrap: nowrap;
+          max-width: 100%;
+        }
       }
 
       /* ---------- desktop: ≥1181px ---------- */
       @media (min-width: 1181px) {
-        .ec-card { width: 380px; max-width: 400px; padding: 30px 36px 24px; }
-        .ec-svg { width: 200px; }
-        .ec-text { font-size: 35px; }
-        .slide-dots { flex-wrap: nowrap; max-width: 100%; }
+        .ec-card {
+          width: 380px;
+          max-width: 400px;
+          padding: 30px 36px 24px;
+        }
+        .ec-svg {
+          width: 200px;
+        }
+        .ec-text {
+          font-size: 35px;
+        }
+        .slide-dots {
+          flex-wrap: nowrap;
+          max-width: 100%;
+        }
       }
 
       /* ---------- phone: ≤640px ---------- */
       @media (max-width: 640px) {
-        .ec-card { width: min(78vw, 320px); }
-        .hero .sunshine { font-size: 30px !important; }
-        .slides { margin-top: 20px; margin-bottom: 20px; }
-        .qnav .qbtn { flex: 1 1 auto; }
-        #gift-message { max-width: calc(100vw - 32px); }
-        .final { padding-left: 16px; padding-right: 16px; }
-        .award-sign { font-size: 28px; }
+        .ec-card {
+          width: min(78vw, 320px);
+        }
+        .hero .sunshine {
+          font-size: 30px !important;
+        }
+        .slides {
+          margin-top: 20px;
+          margin-bottom: 20px;
+        }
+        .qnav .qbtn {
+          flex: 1 1 auto;
+        }
+        #gift-message {
+          max-width: calc(100vw - 32px);
+        }
+        .final {
+          padding-left: 16px;
+          padding-right: 16px;
+        }
+        .award-sign {
+          font-size: 28px;
+        }
       }
 
       /* ---------- small phone: ≤400px ---------- */
       @media (max-width: 400px) {
-        .ec-card { width: min(78vw, 300px); padding: 20px 14px 16px; }
-        .ec-svg { width: clamp(126px, 38vw, 152px); }
-        .ec-text { font-size: 25px; }
-        .nav { max-width: calc(100vw - 10px); padding: 4px; }
-        .nav a { padding: 8px 6px; font-size: 10.5px; min-height: 42px; }
-        .countdown { gap: 6px; }
-        .hero h1 { font-size: clamp(50px, 15vw, 72px); }
-        .cake { font-size: 84px; }
-        .flip { height: 162px; }
+        .ec-card {
+          width: min(78vw, 300px);
+          padding: 20px 14px 16px;
+        }
+        .ec-svg {
+          width: clamp(126px, 38vw, 152px);
+        }
+        .ec-text {
+          font-size: 25px;
+        }
+        .nav {
+          max-width: calc(100vw - 10px);
+          padding: 4px;
+        }
+        .nav a {
+          padding: 8px 6px;
+          font-size: 10.5px;
+          min-height: 42px;
+        }
+        .countdown {
+          gap: 6px;
+        }
+        .hero h1 {
+          font-size: clamp(50px, 15vw, 72px);
+        }
+        .cake {
+          font-size: 84px;
+        }
+        .flip {
+          height: 162px;
+        }
       }
 
       /* ---------- very small: ≤340px ---------- */
       @media (max-width: 340px) {
-        .nav a { padding: 8px 5px; font-size: 10px; letter-spacing: -0.2px; }
-        .ec-card { width: calc(100vw - 28px); }
-        section { padding-left: 11px; padding-right: 11px; }
+        .nav a {
+          padding: 8px 5px;
+          font-size: 10px;
+          letter-spacing: -0.2px;
+        }
+        .ec-card {
+          width: calc(100vw - 28px);
+        }
+        section {
+          padding-left: 11px;
+          padding-right: 11px;
+        }
       }
 
       /* ---------- short screens: landscape phones & short
          tablet windows — candle card shrinks to fit height,
          hero/intro relax --- */
       @media (max-height: 600px) {
-        .ec-card { max-height: calc(100dvh - 28px); padding-top: 14px; padding-bottom: 12px; }
-        .ec-svg { width: clamp(104px, 26vh, 140px); }
-        .ec-text { font-size: clamp(22px, 5vh, 28px); margin-top: 2px; }
-        .hero, #intro { min-height: auto; }
+        .ec-card {
+          max-height: calc(100dvh - 28px);
+          padding-top: 14px;
+          padding-bottom: 12px;
+        }
+        .ec-svg {
+          width: clamp(104px, 26vh, 140px);
+        }
+        .ec-text {
+          font-size: clamp(22px, 5vh, 28px);
+          margin-top: 2px;
+        }
+        .hero,
+        #intro {
+          min-height: auto;
+        }
       }
       @media (max-height: 600px) and (min-width: 641px) {
-        .ec-card { width: 340px; }
+        .ec-card {
+          width: 340px;
+        }
       }
     </style>
   </head>
@@ -2511,7 +2802,7 @@
         var reduceMotion = false;
         try {
           reduceMotion = window.matchMedia(
-            "(prefers-reduced-motion: reduce)"
+            "(prefers-reduced-motion: reduce)",
           ).matches;
         } catch (e) {}
         if (reduceMotion) return;
@@ -2537,7 +2828,8 @@
           var dur = rand(7, 12);
           var size = Math.round(rand(16, 30));
           var sway = Math.round(rand(14, 34)) * (Math.random() < 0.5 ? -1 : 1);
-          var spin = Math.round(rand(160, 340)) * (Math.random() < 0.5 ? -1 : 1);
+          var spin =
+            Math.round(rand(160, 340)) * (Math.random() < 0.5 ? -1 : 1);
           flower.style.setProperty("--x", rand(2, 94).toFixed(2) + "%");
           flower.style.setProperty("--size", size + "px");
           flower.style.setProperty("--dur", dur.toFixed(2) + "s");
@@ -2548,7 +2840,10 @@
 
           var inner = document.createElement("span");
           inner.className = "falling-flower-inner";
-          inner.style.setProperty("--sway-dur", rand(2.1, 3.4).toFixed(2) + "s");
+          inner.style.setProperty(
+            "--sway-dur",
+            rand(2.1, 3.4).toFixed(2) + "s",
+          );
           inner.textContent = "\uD83C\uDF38";
           flower.appendChild(inner);
 
@@ -2598,7 +2893,9 @@
         Somewhere in this world, someone makes life a little more beautiful just
         by existing. This little corner of the internet is for her.
       </p>
-      <button class="pill" id="enterBtn" type="button" onclick="enter()">Open your surprise ♡</button>
+      <button class="pill" id="enterBtn" type="button" onclick="enter()">
+        Open your surprise ♡
+      </button>
       <p style="font-size: 11px; opacity: 0.6; margin-top: 35px">
         Made with all my love, Bby.
       </p>
@@ -2669,98 +2966,1110 @@
 
     <div id="main">
       <div id="globalDecor" aria-hidden="true">
-        <span class="gflower" style="top: 0.9%; left: 55%; font-size: 21px; opacity: 0.33; --dur: 8.8s; --delay: -7.2s">💗</span>
-        <span class="gflower" style="top: 1.6%; right: 4%; font-size: 18px; opacity: 0.33; --dur: 10.8s; --delay: -7.8s">🌷</span>
-        <span class="gflower" style="top: 2.7%; right: 30%; font-size: 26px; opacity: 0.33; --dur: 12.8s; --delay: -1.9s">🌻</span>
-        <span class="gflower" style="top: 3.8%; right: 14%; font-size: 19px; opacity: 0.33; --dur: 12.2s; --delay: -7.2s">✨</span>
-        <span class="gflower" style="top: 4.8%; right: 14%; font-size: 17px; opacity: 0.39; --dur: 10.9s; --delay: -0.2s">💗</span>
-        <span class="gflower" style="top: 6.1%; right: 18%; font-size: 26px; opacity: 0.32; --dur: 8.4s; --delay: -2.7s">🌸</span>
-        <span class="gflower" style="top: 7.5%; left: 10%; font-size: 18px; opacity: 0.35; --dur: 10.5s; --delay: -1.3s">🌷</span>
-        <span class="gflower" style="top: 8.3%; left: 48%; font-size: 21px; opacity: 0.38; --dur: 11.8s; --delay: -7.4s">🌻</span>
-        <span class="gflower" style="top: 9.6%; left: 8%; font-size: 24px; opacity: 0.35; --dur: 13.4s; --delay: -2.9s">✨</span>
-        <span class="gflower" style="top: 10.6%; right: 4%; font-size: 20px; opacity: 0.4; --dur: 12.4s; --delay: -4.8s">🌸</span>
-        <span class="gflower" style="top: 11.4%; right: 30%; font-size: 23px; opacity: 0.41; --dur: 11.5s; --delay: -6.9s">🌸</span>
-        <span class="gflower" style="top: 12.4%; right: 24%; font-size: 26px; opacity: 0.35; --dur: 9.2s; --delay: -0.0s">🌷</span>
-        <span class="gflower" style="top: 13.8%; left: 62%; font-size: 17px; opacity: 0.4; --dur: 8.8s; --delay: -6.7s">✨</span>
-        <span class="gflower" style="top: 14.9%; right: 30%; font-size: 25px; opacity: 0.33; --dur: 11.0s; --delay: -0.5s">✨</span>
-        <span class="gflower" style="top: 16.1%; left: 48%; font-size: 25px; opacity: 0.39; --dur: 12.2s; --delay: -5.3s">💗</span>
-        <span class="gflower" style="top: 16.9%; left: 30%; font-size: 17px; opacity: 0.41; --dur: 12.8s; --delay: -5.9s">💗</span>
-        <span class="gflower" style="top: 18.3%; left: 48%; font-size: 21px; opacity: 0.4; --dur: 10.8s; --delay: -6.4s">🌷</span>
-        <span class="gflower" style="top: 19.1%; left: 36%; font-size: 25px; opacity: 0.41; --dur: 11.3s; --delay: -4.1s">🌻</span>
-        <span class="gflower" style="top: 20.0%; right: 14%; font-size: 20px; opacity: 0.31; --dur: 12.8s; --delay: -0.4s">🌸</span>
-        <span class="gflower" style="top: 21.5%; left: 62%; font-size: 25px; opacity: 0.39; --dur: 8.7s; --delay: -4.2s">💗</span>
-        <span class="gflower" style="top: 22.5%; right: 24%; font-size: 20px; opacity: 0.41; --dur: 12.2s; --delay: -2.5s">🌸</span>
-        <span class="gflower" style="top: 23.7%; right: 18%; font-size: 24px; opacity: 0.41; --dur: 10.5s; --delay: -6.0s">🌸</span>
-        <span class="gflower" style="top: 24.5%; left: 42%; font-size: 20px; opacity: 0.3; --dur: 11.9s; --delay: -7.5s">🌻</span>
-        <span class="gflower" style="top: 25.3%; left: 18%; font-size: 18px; opacity: 0.36; --dur: 9.5s; --delay: -4.1s">✨</span>
-        <span class="gflower" style="top: 26.8%; right: 30%; font-size: 23px; opacity: 0.32; --dur: 8.5s; --delay: -4.6s">✨</span>
-        <span class="gflower" style="top: 27.8%; left: 48%; font-size: 27px; opacity: 0.42; --dur: 8.5s; --delay: -4.8s">🌸</span>
-        <span class="gflower" style="top: 28.8%; left: 10%; font-size: 20px; opacity: 0.32; --dur: 10.5s; --delay: -4.6s">🌷</span>
-        <span class="gflower" style="top: 29.8%; left: 6%; font-size: 24px; opacity: 0.4; --dur: 12.7s; --delay: -7.2s">💗</span>
-        <span class="gflower" style="top: 31.3%; left: 62%; font-size: 20px; opacity: 0.32; --dur: 10.7s; --delay: -6.3s">✨</span>
-        <span class="gflower" style="top: 32.1%; left: 8%; font-size: 23px; opacity: 0.3; --dur: 10.1s; --delay: -0.6s">💗</span>
-        <span class="gflower" style="top: 33.5%; right: 30%; font-size: 19px; opacity: 0.32; --dur: 9.2s; --delay: -7.5s">💗</span>
-        <span class="gflower" style="top: 34.0%; right: 4%; font-size: 26px; opacity: 0.36; --dur: 13.1s; --delay: -3.8s">🌷</span>
-        <span class="gflower" style="top: 35.0%; left: 8%; font-size: 18px; opacity: 0.37; --dur: 11.7s; --delay: -6.1s">🌻</span>
-        <span class="gflower" style="top: 36.2%; left: 42%; font-size: 26px; opacity: 0.3; --dur: 8.5s; --delay: -2.7s">💗</span>
-        <span class="gflower" style="top: 37.6%; right: 18%; font-size: 20px; opacity: 0.33; --dur: 8.7s; --delay: -2.8s">💗</span>
-        <span class="gflower" style="top: 38.6%; left: 4%; font-size: 24px; opacity: 0.37; --dur: 11.1s; --delay: -7.2s">🌸</span>
-        <span class="gflower" style="top: 39.8%; right: 18%; font-size: 18px; opacity: 0.41; --dur: 10.0s; --delay: -6.7s">💗</span>
-        <span class="gflower" style="top: 41.0%; left: 48%; font-size: 25px; opacity: 0.34; --dur: 11.6s; --delay: -0.5s">🌻</span>
-        <span class="gflower" style="top: 41.6%; left: 6%; font-size: 28px; opacity: 0.37; --dur: 9.5s; --delay: -3.2s">✨</span>
-        <span class="gflower" style="top: 43.1%; left: 48%; font-size: 27px; opacity: 0.4; --dur: 10.8s; --delay: -6.0s">🌸</span>
-        <span class="gflower" style="top: 43.7%; right: 4%; font-size: 17px; opacity: 0.34; --dur: 8.7s; --delay: -0.2s">🌸</span>
-        <span class="gflower" style="top: 44.9%; right: 24%; font-size: 25px; opacity: 0.3; --dur: 8.4s; --delay: -0.9s">🌷</span>
-        <span class="gflower" style="top: 46.5%; left: 18%; font-size: 26px; opacity: 0.37; --dur: 10.4s; --delay: -7.7s">🌻</span>
-        <span class="gflower" style="top: 47.6%; left: 18%; font-size: 20px; opacity: 0.38; --dur: 11.7s; --delay: -5.2s">✨</span>
-        <span class="gflower" style="top: 48.4%; right: 8%; font-size: 20px; opacity: 0.4; --dur: 13.4s; --delay: -1.5s">💗</span>
-        <span class="gflower" style="top: 49.8%; left: 8%; font-size: 28px; opacity: 0.41; --dur: 12.3s; --delay: -4.7s">🌷</span>
-        <span class="gflower" style="top: 50.4%; left: 24%; font-size: 17px; opacity: 0.4; --dur: 9.2s; --delay: -1.5s">🌷</span>
-        <span class="gflower" style="top: 51.6%; right: 10%; font-size: 20px; opacity: 0.3; --dur: 9.1s; --delay: -5.4s">🌻</span>
-        <span class="gflower" style="top: 53.0%; right: 24%; font-size: 27px; opacity: 0.42; --dur: 10.9s; --delay: -0.5s">🌸</span>
-        <span class="gflower" style="top: 54.1%; right: 14%; font-size: 17px; opacity: 0.31; --dur: 10.4s; --delay: -2.2s">💗</span>
-        <span class="gflower" style="top: 54.7%; left: 24%; font-size: 26px; opacity: 0.32; --dur: 8.2s; --delay: -4.5s">🌸</span>
-        <span class="gflower" style="top: 56.0%; left: 18%; font-size: 23px; opacity: 0.31; --dur: 11.7s; --delay: -5.4s">🌻</span>
-        <span class="gflower" style="top: 57.2%; left: 55%; font-size: 21px; opacity: 0.36; --dur: 11.7s; --delay: -5.4s">🌻</span>
-        <span class="gflower" style="top: 58.3%; left: 10%; font-size: 23px; opacity: 0.38; --dur: 10.1s; --delay: -2.0s">✨</span>
-        <span class="gflower" style="top: 58.9%; right: 4%; font-size: 21px; opacity: 0.33; --dur: 10.4s; --delay: -3.4s">🌻</span>
-        <span class="gflower" style="top: 60.2%; right: 10%; font-size: 25px; opacity: 0.36; --dur: 13.0s; --delay: -1.6s">🌸</span>
-        <span class="gflower" style="top: 61.1%; left: 14%; font-size: 25px; opacity: 0.38; --dur: 11.4s; --delay: -7.3s">🌷</span>
-        <span class="gflower" style="top: 62.8%; left: 48%; font-size: 21px; opacity: 0.33; --dur: 9.1s; --delay: -7.8s">🌷</span>
-        <span class="gflower" style="top: 63.9%; left: 30%; font-size: 23px; opacity: 0.41; --dur: 11.2s; --delay: -2.3s">✨</span>
-        <span class="gflower" style="top: 64.5%; right: 8%; font-size: 27px; opacity: 0.38; --dur: 12.9s; --delay: -1.1s">💗</span>
-        <span class="gflower" style="top: 66.0%; right: 8%; font-size: 28px; opacity: 0.36; --dur: 8.3s; --delay: -6.0s">🌸</span>
-        <span class="gflower" style="top: 66.7%; right: 18%; font-size: 24px; opacity: 0.37; --dur: 12.0s; --delay: -4.0s">🌷</span>
-        <span class="gflower" style="top: 68.1%; right: 30%; font-size: 24px; opacity: 0.33; --dur: 9.4s; --delay: -2.9s">🌻</span>
-        <span class="gflower" style="top: 69.1%; right: 10%; font-size: 21px; opacity: 0.35; --dur: 11.9s; --delay: -6.1s">🌻</span>
-        <span class="gflower" style="top: 69.9%; left: 8%; font-size: 19px; opacity: 0.33; --dur: 11.8s; --delay: -2.3s">💗</span>
-        <span class="gflower" style="top: 70.7%; right: 30%; font-size: 23px; opacity: 0.31; --dur: 12.6s; --delay: -4.9s">🌸</span>
-        <span class="gflower" style="top: 72.4%; left: 62%; font-size: 26px; opacity: 0.35; --dur: 8.0s; --delay: -5.2s">✨</span>
-        <span class="gflower" style="top: 73.5%; right: 10%; font-size: 24px; opacity: 0.33; --dur: 10.4s; --delay: -7.8s">🌻</span>
-        <span class="gflower" style="top: 74.2%; right: 8%; font-size: 24px; opacity: 0.41; --dur: 13.4s; --delay: -3.7s">✨</span>
-        <span class="gflower" style="top: 75.7%; left: 6%; font-size: 27px; opacity: 0.35; --dur: 12.8s; --delay: -6.5s">🌻</span>
-        <span class="gflower" style="top: 76.4%; left: 30%; font-size: 22px; opacity: 0.34; --dur: 12.8s; --delay: -5.8s">🌸</span>
-        <span class="gflower" style="top: 77.9%; right: 6%; font-size: 24px; opacity: 0.3; --dur: 11.0s; --delay: -0.0s">🌷</span>
-        <span class="gflower" style="top: 78.5%; left: 62%; font-size: 27px; opacity: 0.3; --dur: 8.2s; --delay: -6.0s">🌸</span>
-        <span class="gflower" style="top: 79.8%; left: 8%; font-size: 24px; opacity: 0.38; --dur: 11.1s; --delay: -6.3s">✨</span>
-        <span class="gflower" style="top: 81.0%; right: 6%; font-size: 19px; opacity: 0.42; --dur: 8.6s; --delay: -7.8s">💗</span>
-        <span class="gflower" style="top: 81.7%; right: 10%; font-size: 18px; opacity: 0.37; --dur: 12.6s; --delay: -6.1s">🌻</span>
-        <span class="gflower" style="top: 83.3%; left: 62%; font-size: 26px; opacity: 0.39; --dur: 9.9s; --delay: -4.6s">🌷</span>
-        <span class="gflower" style="top: 84.0%; right: 24%; font-size: 24px; opacity: 0.31; --dur: 13.3s; --delay: -2.9s">🌻</span>
-        <span class="gflower" style="top: 85.4%; left: 24%; font-size: 19px; opacity: 0.39; --dur: 13.3s; --delay: -5.8s">💗</span>
-        <span class="gflower" style="top: 86.4%; right: 14%; font-size: 22px; opacity: 0.4; --dur: 12.6s; --delay: -7.3s">💗</span>
-        <span class="gflower" style="top: 87.6%; left: 62%; font-size: 24px; opacity: 0.37; --dur: 11.7s; --delay: -5.3s">🌸</span>
-        <span class="gflower" style="top: 88.4%; right: 30%; font-size: 20px; opacity: 0.34; --dur: 9.4s; --delay: -5.8s">💗</span>
-        <span class="gflower" style="top: 89.6%; right: 4%; font-size: 25px; opacity: 0.41; --dur: 8.5s; --delay: -2.2s">🌻</span>
-        <span class="gflower" style="top: 90.5%; left: 55%; font-size: 24px; opacity: 0.38; --dur: 10.7s; --delay: -1.7s">✨</span>
-        <span class="gflower" style="top: 91.3%; left: 24%; font-size: 28px; opacity: 0.33; --dur: 11.7s; --delay: -5.0s">💗</span>
-        <span class="gflower" style="top: 92.7%; right: 18%; font-size: 22px; opacity: 0.38; --dur: 9.5s; --delay: -6.0s">🌸</span>
-        <span class="gflower" style="top: 93.5%; left: 18%; font-size: 18px; opacity: 0.39; --dur: 13.2s; --delay: -2.5s">🌷</span>
-        <span class="gflower" style="top: 94.6%; right: 14%; font-size: 18px; opacity: 0.4; --dur: 9.6s; --delay: -5.1s">🌻</span>
-        <span class="gflower" style="top: 95.6%; left: 14%; font-size: 17px; opacity: 0.42; --dur: 11.0s; --delay: -2.4s">✨</span>
-        <span class="gflower" style="top: 96.7%; right: 4%; font-size: 26px; opacity: 0.33; --dur: 10.6s; --delay: -5.3s">💗</span>
-        <span class="gflower" style="top: 98.5%; right: 6%; font-size: 18px; opacity: 0.35; --dur: 8.4s; --delay: -3.0s">🌸</span>
-        <span class="gflower" style="top: 98.9%; right: 10%; font-size: 18px; opacity: 0.37; --dur: 10.3s; --delay: -3.2s">🌷</span>
+        <span
+          class="gflower"
+          style="
+            top: 0.9%;
+            left: 55%;
+            font-size: 21px;
+            opacity: 0.33;
+            --dur: 8.8s;
+            --delay: -7.2s;
+          "
+          >💗</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 1.6%;
+            right: 4%;
+            font-size: 18px;
+            opacity: 0.33;
+            --dur: 10.8s;
+            --delay: -7.8s;
+          "
+          >🌷</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 2.7%;
+            right: 30%;
+            font-size: 26px;
+            opacity: 0.33;
+            --dur: 12.8s;
+            --delay: -1.9s;
+          "
+          >🌻</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 3.8%;
+            right: 14%;
+            font-size: 19px;
+            opacity: 0.33;
+            --dur: 12.2s;
+            --delay: -7.2s;
+          "
+          >✨</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 4.8%;
+            right: 14%;
+            font-size: 17px;
+            opacity: 0.39;
+            --dur: 10.9s;
+            --delay: -0.2s;
+          "
+          >💗</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 6.1%;
+            right: 18%;
+            font-size: 26px;
+            opacity: 0.32;
+            --dur: 8.4s;
+            --delay: -2.7s;
+          "
+          >🌸</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 7.5%;
+            left: 10%;
+            font-size: 18px;
+            opacity: 0.35;
+            --dur: 10.5s;
+            --delay: -1.3s;
+          "
+          >🌷</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 8.3%;
+            left: 48%;
+            font-size: 21px;
+            opacity: 0.38;
+            --dur: 11.8s;
+            --delay: -7.4s;
+          "
+          >🌻</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 9.6%;
+            left: 8%;
+            font-size: 24px;
+            opacity: 0.35;
+            --dur: 13.4s;
+            --delay: -2.9s;
+          "
+          >✨</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 10.6%;
+            right: 4%;
+            font-size: 20px;
+            opacity: 0.4;
+            --dur: 12.4s;
+            --delay: -4.8s;
+          "
+          >🌸</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 11.4%;
+            right: 30%;
+            font-size: 23px;
+            opacity: 0.41;
+            --dur: 11.5s;
+            --delay: -6.9s;
+          "
+          >🌸</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 12.4%;
+            right: 24%;
+            font-size: 26px;
+            opacity: 0.35;
+            --dur: 9.2s;
+            --delay: -0s;
+          "
+          >🌷</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 13.8%;
+            left: 62%;
+            font-size: 17px;
+            opacity: 0.4;
+            --dur: 8.8s;
+            --delay: -6.7s;
+          "
+          >✨</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 14.9%;
+            right: 30%;
+            font-size: 25px;
+            opacity: 0.33;
+            --dur: 11s;
+            --delay: -0.5s;
+          "
+          >✨</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 16.1%;
+            left: 48%;
+            font-size: 25px;
+            opacity: 0.39;
+            --dur: 12.2s;
+            --delay: -5.3s;
+          "
+          >💗</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 16.9%;
+            left: 30%;
+            font-size: 17px;
+            opacity: 0.41;
+            --dur: 12.8s;
+            --delay: -5.9s;
+          "
+          >💗</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 18.3%;
+            left: 48%;
+            font-size: 21px;
+            opacity: 0.4;
+            --dur: 10.8s;
+            --delay: -6.4s;
+          "
+          >🌷</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 19.1%;
+            left: 36%;
+            font-size: 25px;
+            opacity: 0.41;
+            --dur: 11.3s;
+            --delay: -4.1s;
+          "
+          >🌻</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 20%;
+            right: 14%;
+            font-size: 20px;
+            opacity: 0.31;
+            --dur: 12.8s;
+            --delay: -0.4s;
+          "
+          >🌸</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 21.5%;
+            left: 62%;
+            font-size: 25px;
+            opacity: 0.39;
+            --dur: 8.7s;
+            --delay: -4.2s;
+          "
+          >💗</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 22.5%;
+            right: 24%;
+            font-size: 20px;
+            opacity: 0.41;
+            --dur: 12.2s;
+            --delay: -2.5s;
+          "
+          >🌸</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 23.7%;
+            right: 18%;
+            font-size: 24px;
+            opacity: 0.41;
+            --dur: 10.5s;
+            --delay: -6s;
+          "
+          >🌸</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 24.5%;
+            left: 42%;
+            font-size: 20px;
+            opacity: 0.3;
+            --dur: 11.9s;
+            --delay: -7.5s;
+          "
+          >🌻</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 25.3%;
+            left: 18%;
+            font-size: 18px;
+            opacity: 0.36;
+            --dur: 9.5s;
+            --delay: -4.1s;
+          "
+          >✨</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 26.8%;
+            right: 30%;
+            font-size: 23px;
+            opacity: 0.32;
+            --dur: 8.5s;
+            --delay: -4.6s;
+          "
+          >✨</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 27.8%;
+            left: 48%;
+            font-size: 27px;
+            opacity: 0.42;
+            --dur: 8.5s;
+            --delay: -4.8s;
+          "
+          >🌸</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 28.8%;
+            left: 10%;
+            font-size: 20px;
+            opacity: 0.32;
+            --dur: 10.5s;
+            --delay: -4.6s;
+          "
+          >🌷</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 29.8%;
+            left: 6%;
+            font-size: 24px;
+            opacity: 0.4;
+            --dur: 12.7s;
+            --delay: -7.2s;
+          "
+          >💗</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 31.3%;
+            left: 62%;
+            font-size: 20px;
+            opacity: 0.32;
+            --dur: 10.7s;
+            --delay: -6.3s;
+          "
+          >✨</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 32.1%;
+            left: 8%;
+            font-size: 23px;
+            opacity: 0.3;
+            --dur: 10.1s;
+            --delay: -0.6s;
+          "
+          >💗</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 33.5%;
+            right: 30%;
+            font-size: 19px;
+            opacity: 0.32;
+            --dur: 9.2s;
+            --delay: -7.5s;
+          "
+          >💗</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 34%;
+            right: 4%;
+            font-size: 26px;
+            opacity: 0.36;
+            --dur: 13.1s;
+            --delay: -3.8s;
+          "
+          >🌷</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 35%;
+            left: 8%;
+            font-size: 18px;
+            opacity: 0.37;
+            --dur: 11.7s;
+            --delay: -6.1s;
+          "
+          >🌻</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 36.2%;
+            left: 42%;
+            font-size: 26px;
+            opacity: 0.3;
+            --dur: 8.5s;
+            --delay: -2.7s;
+          "
+          >💗</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 37.6%;
+            right: 18%;
+            font-size: 20px;
+            opacity: 0.33;
+            --dur: 8.7s;
+            --delay: -2.8s;
+          "
+          >💗</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 38.6%;
+            left: 4%;
+            font-size: 24px;
+            opacity: 0.37;
+            --dur: 11.1s;
+            --delay: -7.2s;
+          "
+          >🌸</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 39.8%;
+            right: 18%;
+            font-size: 18px;
+            opacity: 0.41;
+            --dur: 10s;
+            --delay: -6.7s;
+          "
+          >💗</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 41%;
+            left: 48%;
+            font-size: 25px;
+            opacity: 0.34;
+            --dur: 11.6s;
+            --delay: -0.5s;
+          "
+          >🌻</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 41.6%;
+            left: 6%;
+            font-size: 28px;
+            opacity: 0.37;
+            --dur: 9.5s;
+            --delay: -3.2s;
+          "
+          >✨</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 43.1%;
+            left: 48%;
+            font-size: 27px;
+            opacity: 0.4;
+            --dur: 10.8s;
+            --delay: -6s;
+          "
+          >🌸</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 43.7%;
+            right: 4%;
+            font-size: 17px;
+            opacity: 0.34;
+            --dur: 8.7s;
+            --delay: -0.2s;
+          "
+          >🌸</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 44.9%;
+            right: 24%;
+            font-size: 25px;
+            opacity: 0.3;
+            --dur: 8.4s;
+            --delay: -0.9s;
+          "
+          >🌷</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 46.5%;
+            left: 18%;
+            font-size: 26px;
+            opacity: 0.37;
+            --dur: 10.4s;
+            --delay: -7.7s;
+          "
+          >🌻</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 47.6%;
+            left: 18%;
+            font-size: 20px;
+            opacity: 0.38;
+            --dur: 11.7s;
+            --delay: -5.2s;
+          "
+          >✨</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 48.4%;
+            right: 8%;
+            font-size: 20px;
+            opacity: 0.4;
+            --dur: 13.4s;
+            --delay: -1.5s;
+          "
+          >💗</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 49.8%;
+            left: 8%;
+            font-size: 28px;
+            opacity: 0.41;
+            --dur: 12.3s;
+            --delay: -4.7s;
+          "
+          >🌷</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 50.4%;
+            left: 24%;
+            font-size: 17px;
+            opacity: 0.4;
+            --dur: 9.2s;
+            --delay: -1.5s;
+          "
+          >🌷</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 51.6%;
+            right: 10%;
+            font-size: 20px;
+            opacity: 0.3;
+            --dur: 9.1s;
+            --delay: -5.4s;
+          "
+          >🌻</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 53%;
+            right: 24%;
+            font-size: 27px;
+            opacity: 0.42;
+            --dur: 10.9s;
+            --delay: -0.5s;
+          "
+          >🌸</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 54.1%;
+            right: 14%;
+            font-size: 17px;
+            opacity: 0.31;
+            --dur: 10.4s;
+            --delay: -2.2s;
+          "
+          >💗</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 54.7%;
+            left: 24%;
+            font-size: 26px;
+            opacity: 0.32;
+            --dur: 8.2s;
+            --delay: -4.5s;
+          "
+          >🌸</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 56%;
+            left: 18%;
+            font-size: 23px;
+            opacity: 0.31;
+            --dur: 11.7s;
+            --delay: -5.4s;
+          "
+          >🌻</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 57.2%;
+            left: 55%;
+            font-size: 21px;
+            opacity: 0.36;
+            --dur: 11.7s;
+            --delay: -5.4s;
+          "
+          >🌻</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 58.3%;
+            left: 10%;
+            font-size: 23px;
+            opacity: 0.38;
+            --dur: 10.1s;
+            --delay: -2s;
+          "
+          >✨</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 58.9%;
+            right: 4%;
+            font-size: 21px;
+            opacity: 0.33;
+            --dur: 10.4s;
+            --delay: -3.4s;
+          "
+          >🌻</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 60.2%;
+            right: 10%;
+            font-size: 25px;
+            opacity: 0.36;
+            --dur: 13s;
+            --delay: -1.6s;
+          "
+          >🌸</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 61.1%;
+            left: 14%;
+            font-size: 25px;
+            opacity: 0.38;
+            --dur: 11.4s;
+            --delay: -7.3s;
+          "
+          >🌷</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 62.8%;
+            left: 48%;
+            font-size: 21px;
+            opacity: 0.33;
+            --dur: 9.1s;
+            --delay: -7.8s;
+          "
+          >🌷</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 63.9%;
+            left: 30%;
+            font-size: 23px;
+            opacity: 0.41;
+            --dur: 11.2s;
+            --delay: -2.3s;
+          "
+          >✨</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 64.5%;
+            right: 8%;
+            font-size: 27px;
+            opacity: 0.38;
+            --dur: 12.9s;
+            --delay: -1.1s;
+          "
+          >💗</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 66%;
+            right: 8%;
+            font-size: 28px;
+            opacity: 0.36;
+            --dur: 8.3s;
+            --delay: -6s;
+          "
+          >🌸</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 66.7%;
+            right: 18%;
+            font-size: 24px;
+            opacity: 0.37;
+            --dur: 12s;
+            --delay: -4s;
+          "
+          >🌷</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 68.1%;
+            right: 30%;
+            font-size: 24px;
+            opacity: 0.33;
+            --dur: 9.4s;
+            --delay: -2.9s;
+          "
+          >🌻</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 69.1%;
+            right: 10%;
+            font-size: 21px;
+            opacity: 0.35;
+            --dur: 11.9s;
+            --delay: -6.1s;
+          "
+          >🌻</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 69.9%;
+            left: 8%;
+            font-size: 19px;
+            opacity: 0.33;
+            --dur: 11.8s;
+            --delay: -2.3s;
+          "
+          >💗</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 70.7%;
+            right: 30%;
+            font-size: 23px;
+            opacity: 0.31;
+            --dur: 12.6s;
+            --delay: -4.9s;
+          "
+          >🌸</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 72.4%;
+            left: 62%;
+            font-size: 26px;
+            opacity: 0.35;
+            --dur: 8s;
+            --delay: -5.2s;
+          "
+          >✨</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 73.5%;
+            right: 10%;
+            font-size: 24px;
+            opacity: 0.33;
+            --dur: 10.4s;
+            --delay: -7.8s;
+          "
+          >🌻</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 74.2%;
+            right: 8%;
+            font-size: 24px;
+            opacity: 0.41;
+            --dur: 13.4s;
+            --delay: -3.7s;
+          "
+          >✨</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 75.7%;
+            left: 6%;
+            font-size: 27px;
+            opacity: 0.35;
+            --dur: 12.8s;
+            --delay: -6.5s;
+          "
+          >🌻</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 76.4%;
+            left: 30%;
+            font-size: 22px;
+            opacity: 0.34;
+            --dur: 12.8s;
+            --delay: -5.8s;
+          "
+          >🌸</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 77.9%;
+            right: 6%;
+            font-size: 24px;
+            opacity: 0.3;
+            --dur: 11s;
+            --delay: -0s;
+          "
+          >🌷</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 78.5%;
+            left: 62%;
+            font-size: 27px;
+            opacity: 0.3;
+            --dur: 8.2s;
+            --delay: -6s;
+          "
+          >🌸</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 79.8%;
+            left: 8%;
+            font-size: 24px;
+            opacity: 0.38;
+            --dur: 11.1s;
+            --delay: -6.3s;
+          "
+          >✨</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 81%;
+            right: 6%;
+            font-size: 19px;
+            opacity: 0.42;
+            --dur: 8.6s;
+            --delay: -7.8s;
+          "
+          >💗</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 81.7%;
+            right: 10%;
+            font-size: 18px;
+            opacity: 0.37;
+            --dur: 12.6s;
+            --delay: -6.1s;
+          "
+          >🌻</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 83.3%;
+            left: 62%;
+            font-size: 26px;
+            opacity: 0.39;
+            --dur: 9.9s;
+            --delay: -4.6s;
+          "
+          >🌷</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 84%;
+            right: 24%;
+            font-size: 24px;
+            opacity: 0.31;
+            --dur: 13.3s;
+            --delay: -2.9s;
+          "
+          >🌻</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 85.4%;
+            left: 24%;
+            font-size: 19px;
+            opacity: 0.39;
+            --dur: 13.3s;
+            --delay: -5.8s;
+          "
+          >💗</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 86.4%;
+            right: 14%;
+            font-size: 22px;
+            opacity: 0.4;
+            --dur: 12.6s;
+            --delay: -7.3s;
+          "
+          >💗</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 87.6%;
+            left: 62%;
+            font-size: 24px;
+            opacity: 0.37;
+            --dur: 11.7s;
+            --delay: -5.3s;
+          "
+          >🌸</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 88.4%;
+            right: 30%;
+            font-size: 20px;
+            opacity: 0.34;
+            --dur: 9.4s;
+            --delay: -5.8s;
+          "
+          >💗</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 89.6%;
+            right: 4%;
+            font-size: 25px;
+            opacity: 0.41;
+            --dur: 8.5s;
+            --delay: -2.2s;
+          "
+          >🌻</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 90.5%;
+            left: 55%;
+            font-size: 24px;
+            opacity: 0.38;
+            --dur: 10.7s;
+            --delay: -1.7s;
+          "
+          >✨</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 91.3%;
+            left: 24%;
+            font-size: 28px;
+            opacity: 0.33;
+            --dur: 11.7s;
+            --delay: -5s;
+          "
+          >💗</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 92.7%;
+            right: 18%;
+            font-size: 22px;
+            opacity: 0.38;
+            --dur: 9.5s;
+            --delay: -6s;
+          "
+          >🌸</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 93.5%;
+            left: 18%;
+            font-size: 18px;
+            opacity: 0.39;
+            --dur: 13.2s;
+            --delay: -2.5s;
+          "
+          >🌷</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 94.6%;
+            right: 14%;
+            font-size: 18px;
+            opacity: 0.4;
+            --dur: 9.6s;
+            --delay: -5.1s;
+          "
+          >🌻</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 95.6%;
+            left: 14%;
+            font-size: 17px;
+            opacity: 0.42;
+            --dur: 11s;
+            --delay: -2.4s;
+          "
+          >✨</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 96.7%;
+            right: 4%;
+            font-size: 26px;
+            opacity: 0.33;
+            --dur: 10.6s;
+            --delay: -5.3s;
+          "
+          >💗</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 98.5%;
+            right: 6%;
+            font-size: 18px;
+            opacity: 0.35;
+            --dur: 8.4s;
+            --delay: -3s;
+          "
+          >🌸</span
+        >
+        <span
+          class="gflower"
+          style="
+            top: 98.9%;
+            right: 10%;
+            font-size: 18px;
+            opacity: 0.37;
+            --dur: 10.3s;
+            --delay: -3.2s;
+          "
+          >🌷</span
+        >
       </div>
       <nav class="nav">
         <a href="#s-wish">Wish</a><a href="#s-us">Us</a
@@ -2826,7 +4135,12 @@
            Wish section's own candle below. -->
       <div id="entryCandle" hidden aria-hidden="true">
         <div class="ec-card">
-          <svg class="ec-svg" viewBox="0 0 180 162" focusable="false" aria-hidden="true">
+          <svg
+            class="ec-svg"
+            viewBox="0 0 180 162"
+            focusable="false"
+            aria-hidden="true"
+          >
             <defs>
               <radialGradient id="ecFlameGrad" cx="50%" cy="68%" r="65%">
                 <stop offset="0%" stop-color="#fff7cf" />
@@ -2838,36 +4152,99 @@
                 <stop offset="60%" stop-color="#ffd166" stop-opacity="0.18" />
                 <stop offset="100%" stop-color="#ffd166" stop-opacity="0" />
               </radialGradient>
-              <pattern id="ecStripes" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(24)">
+              <pattern
+                id="ecStripes"
+                width="10"
+                height="10"
+                patternUnits="userSpaceOnUse"
+                patternTransform="rotate(24)"
+              >
                 <rect width="10" height="10" fill="#fff8f7" />
                 <rect width="5" height="10" fill="#f6a8c5" />
               </pattern>
             </defs>
-            <circle class="ec-halo-c" cx="90" cy="30" r="30" fill="url(#ecHaloGrad)" />
+            <circle
+              class="ec-halo-c"
+              cx="90"
+              cy="30"
+              r="30"
+              fill="url(#ecHaloGrad)"
+            />
             <g class="ec-flame-g">
-              <path d="M90 6c7.5 9.8 11 16.2 11 22.4a11 11 0 1 1-22 0C79 22.2 82.5 15.8 90 6z" fill="url(#ecFlameGrad)" />
-              <path d="M90 22.5c3.4 4.5 5 7.6 5 10.4a5 5 0 1 1-10 0c0-2.8 1.6-5.9 5-10.4z" fill="#fffbe8" opacity="0.92" />
+              <path
+                d="M90 6c7.5 9.8 11 16.2 11 22.4a11 11 0 1 1-22 0C79 22.2 82.5 15.8 90 6z"
+                fill="url(#ecFlameGrad)"
+              />
+              <path
+                d="M90 22.5c3.4 4.5 5 7.6 5 10.4a5 5 0 1 1-10 0c0-2.8 1.6-5.9 5-10.4z"
+                fill="#fffbe8"
+                opacity="0.92"
+              />
             </g>
             <g class="ec-spark" transform="translate(36 56)">
-              <path d="M0-7 L2-2 L7 0 L2 2 L0 7 L-2 2 L-7 0 L-2-2 Z" fill="#ffd166" />
+              <path
+                d="M0-7 L2-2 L7 0 L2 2 L0 7 L-2 2 L-7 0 L-2-2 Z"
+                fill="#ffd166"
+              />
             </g>
             <g class="ec-spark" transform="translate(146 44) scale(0.72)">
-              <path d="M0-7 L2-2 L7 0 L2 2 L0 7 L-2 2 L-7 0 L-2-2 Z" fill="#f6a8c5" />
+              <path
+                d="M0-7 L2-2 L7 0 L2 2 L0 7 L-2 2 L-7 0 L-2-2 Z"
+                fill="#f6a8c5"
+              />
             </g>
-            <rect x="88.4" y="40" width="3.2" height="8" rx="1.6" fill="#684052" />
-            <rect x="82" y="48" width="16" height="34" rx="4" fill="url(#ecStripes)" stroke="#e79ec0" stroke-width="1" />
+            <rect
+              x="88.4"
+              y="40"
+              width="3.2"
+              height="8"
+              rx="1.6"
+              fill="#684052"
+            />
+            <rect
+              x="82"
+              y="48"
+              width="16"
+              height="34"
+              rx="4"
+              fill="url(#ecStripes)"
+              stroke="#e79ec0"
+              stroke-width="1"
+            />
             <rect x="52" y="82" width="76" height="30" rx="7" fill="#f6a8c5" />
             <rect x="52" y="82" width="76" height="9" rx="4.5" fill="#fff8f7" />
             <circle cx="66" cy="101" r="2.6" fill="#ffffff" opacity="0.85" />
             <circle cx="90" cy="104" r="2.6" fill="#ffffff" opacity="0.85" />
             <circle cx="114" cy="101" r="2.6" fill="#ffffff" opacity="0.85" />
-            <rect x="34" y="112" width="112" height="32" rx="8" fill="#c94f80" />
-            <rect x="34" y="112" width="112" height="10" rx="5" fill="#fff8f7" opacity="0.96" />
+            <rect
+              x="34"
+              y="112"
+              width="112"
+              height="32"
+              rx="8"
+              fill="#c94f80"
+            />
+            <rect
+              x="34"
+              y="112"
+              width="112"
+              height="10"
+              rx="5"
+              fill="#fff8f7"
+              opacity="0.96"
+            />
             <circle cx="56" cy="132" r="2.6" fill="#ffd166" />
             <circle cx="79" cy="135" r="2.6" fill="#ffd166" />
             <circle cx="102" cy="132" r="2.6" fill="#ffd166" />
             <circle cx="124" cy="135" r="2.6" fill="#ffd166" />
-            <ellipse cx="90" cy="150" rx="72" ry="7" fill="#f6d08a" opacity="0.9" />
+            <ellipse
+              cx="90"
+              cy="150"
+              rx="72"
+              ry="7"
+              fill="#f6d08a"
+              opacity="0.9"
+            />
           </svg>
           <p class="ec-text">Happy Birthday, Sunshine ♡</p>
         </div>
@@ -3006,10 +4383,24 @@
           <p>
             Close your eyes, wish for something beautiful, then tap the cake.
           </p>
-          <button class="cake" id="cake" type="button" aria-label="Blow out the candle" aria-describedby="candleStatus" onclick="blowCandle()">
+          <button
+            class="cake"
+            id="cake"
+            type="button"
+            aria-label="Blow out the candle"
+            aria-describedby="candleStatus"
+            onclick="blowCandle()"
+          >
             <span class="flame" aria-hidden="true">🔥</span>🎂
           </button>
-          <p class="candle-status" id="candleStatus" role="status" aria-live="polite">The candle is lit — tap the cake to blow it out and make your wish.</p>
+          <p
+            class="candle-status"
+            id="candleStatus"
+            role="status"
+            aria-live="polite"
+          >
+            The candle is lit — tap the cake to blow it out and make your wish.
+          </p>
           <div id="wishMsg" class="soft-card">
             <p
               style="
@@ -3030,97 +4421,108 @@
         </div>
       </section>
 
-    <script>
-      // Candle gate: small and separate from the main script at the bottom
-      // of the page, so tapping the cake always completes the wish even if
-      // that larger script is slow, blocked or stops halfway on a device
-      // (for example when the birthday song cannot start). The main
-      // script's own handler runs first on a tap; this only checks a moment
-      // later and finishes the job if the wish did not complete.
-      (function () {
-        var cake = document.getElementById("cake");
-        if (!cake) return;
-        function fullyBlown() {
-          var msg = document.getElementById("wishMsg");
-          return (
-            cake.classList.contains("out") &&
-            !!msg &&
-            msg.style.display === "block"
-          );
-        }
-        function completeBlow() {
-          if (fullyBlown()) return;
-          cake.classList.add("out");
-          var bg = document.getElementById("wishbg");
-          if (bg) bg.classList.add("show");
-          var mb = document.getElementById("musicBtn");
-          if (mb) mb.style.display = "";
-          var msg = document.getElementById("wishMsg");
-          if (msg) msg.style.display = "block";
-          var cs = document.getElementById("candleStatus");
-          if (cs) cs.textContent = "Wish made \u2661 Your candle is out — may every wish come true.";
-          // Rotate the wish backgrounds, like the main handler does.
-          var layers = Array.prototype.slice.call(
-            document.querySelectorAll(".wishbg"),
-            1,
-          );
-          var k = 0;
-          setTimeout(function () {
-            var step = function () {
-              if (k < layers.length) layers[k++].classList.add("show");
-              else {
-                layers.forEach(function (l) {
-                  l.classList.remove("show");
-                });
-                k = 0;
+      <script>
+        // Candle gate: small and separate from the main script at the bottom
+        // of the page, so tapping the cake always completes the wish even if
+        // that larger script is slow, blocked or stops halfway on a device
+        // (for example when the birthday song cannot start). The main
+        // script's own handler runs first on a tap; this only checks a moment
+        // later and finishes the job if the wish did not complete.
+        (function () {
+          var cake = document.getElementById("cake");
+          if (!cake) return;
+          function fullyBlown() {
+            var msg = document.getElementById("wishMsg");
+            return (
+              cake.classList.contains("out") &&
+              !!msg &&
+              msg.style.display === "block"
+            );
+          }
+          function completeBlow() {
+            if (fullyBlown()) return;
+            cake.classList.add("out");
+            var bg = document.getElementById("wishbg");
+            if (bg) bg.classList.add("show");
+            var mb = document.getElementById("musicBtn");
+            if (mb) mb.style.display = "";
+            var msg = document.getElementById("wishMsg");
+            if (msg) msg.style.display = "block";
+            var cs = document.getElementById("candleStatus");
+            if (cs)
+              cs.textContent =
+                "Wish made \u2661 Your candle is out — may every wish come true.";
+            // Rotate the wish backgrounds, like the main handler does.
+            var layers = Array.prototype.slice.call(
+              document.querySelectorAll(".wishbg"),
+              1,
+            );
+            var k = 0;
+            setTimeout(function () {
+              var step = function () {
+                if (k < layers.length) layers[k++].classList.add("show");
+                else {
+                  layers.forEach(function (l) {
+                    l.classList.remove("show");
+                  });
+                  k = 0;
+                }
+              };
+              step();
+              setInterval(step, 3000);
+            }, 3000);
+            // Music and confetti are extras: try each on its own so one
+            // failing can never block the other, or the wish itself.
+            try {
+              if (typeof window.startSong === "function") window.startSong();
+              else if (typeof window.toggleMusic === "function")
+                window.toggleMusic();
+            } catch (err) {}
+            try {
+              if (typeof window.celebrate === "function") window.celebrate();
+            } catch (err) {}
+            try {
+              var emo = [
+                "\u{1F497}",
+                "\u{1F338}",
+                "\u2728",
+                "\u{1F389}",
+                "\u{1F337}",
+                "\u{1F98B}",
+              ];
+              var reduceB =
+                window.matchMedia &&
+                matchMedia("(prefers-reduced-motion: reduce)").matches;
+              for (var i = 0; i < (reduceB ? 0 : 30); i++) {
+                var b = document.createElement("span");
+                b.className = "burst";
+                b.textContent = emo[i % emo.length];
+                b.style.setProperty("--x", Math.random() * 360 - 180 + "px");
+                b.style.setProperty("--y", -Math.random() * 380 - 40 + "px");
+                document.body.appendChild(b);
+                setTimeout(
+                  (function (el) {
+                    return function () {
+                      el.remove();
+                    };
+                  })(b),
+                  1700,
+                );
               }
-            };
-            step();
-            setInterval(step, 3000);
-          }, 3000);
-          // Music and confetti are extras: try each on its own so one
-          // failing can never block the other, or the wish itself.
-          try {
-            if (typeof window.startSong === "function") window.startSong();
-            else if (typeof window.toggleMusic === "function")
-              window.toggleMusic();
-          } catch (err) {}
-          try {
-            if (typeof window.celebrate === "function") window.celebrate();
-          } catch (err) {}
-          try {
-            var emo = ["\u{1F497}", "\u{1F338}", "\u2728", "\u{1F389}", "\u{1F337}", "\u{1F98B}"];
-            var reduceB = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
-            for (var i = 0; i < (reduceB ? 0 : 30); i++) {
-              var b = document.createElement("span");
-              b.className = "burst";
-              b.textContent = emo[i % emo.length];
-              b.style.setProperty("--x", Math.random() * 360 - 180 + "px");
-              b.style.setProperty("--y", -Math.random() * 380 - 40 + "px");
-              document.body.appendChild(b);
-              setTimeout(
-                (function (el) {
-                  return function () {
-                    el.remove();
-                  };
-                })(b),
-                1700,
-              );
-            }
-          } catch (err) {}
-        }
-        function arm() {
-          setTimeout(completeBlow, 250);
-        }
-        cake.addEventListener("click", arm, false);
-        cake.addEventListener("touchend", arm, false);
-      })();
-    </script>
+            } catch (err) {}
+          }
+          function arm() {
+            setTimeout(completeBlow, 250);
+          }
+          cake.addEventListener("click", arm, false);
+          cake.addEventListener("touchend", arm, false);
+        })();
+      </script>
 
       <section class="reveal" id="s-letter">
         <div class="content">
           <div class="eyebrow">A letter from my heart</div>
-          <h2>Dear Bby...</h2>
+          <h2>Dear love...</h2>
           <div class="soft-card love-letter">
             My dearest Sakshi, Happy Birthday, Bby! 🤍 I don't know if words
             will ever be enough to explain how special you are to me. I hope you
@@ -3134,8 +4536,8 @@
             happiness your heart can hold. May your dreams find their way to
             you, and may that beautiful smile of yours never fade. You deserve
             the softest love, the warmest hugs, and a thousand reasons to be
-            happy. Happy Birthday once again, my Bby. With all my love, Your
-            person. 🤍
+            happy. Happy Birthday once again, my Bby. With all my love, Yours
+            Aevi. 🤍
           </div>
         </div>
       </section>
@@ -3165,29 +4567,177 @@
           <div class="eyebrow">Tap to flip</div>
           <h2>23 Reasons Why I Love You</h2>
           <div class="cards" id="reasonCards">
-            <div class="flip"><div class="flip-in"><div class="face front">Reason 1</div><div class="face back">Your smile can turn my worst day around.</div></div></div>
-            <div class="flip"><div class="flip-in"><div class="face front">Reason 2</div><div class="face back">You care about your people with your whole heart.</div></div></div>
-            <div class="flip"><div class="flip-in"><div class="face front">Reason 3</div><div class="face back">You are beautiful inside and out.</div></div></div>
-            <div class="flip"><div class="flip-in"><div class="face front">Reason 4</div><div class="face back">You always try your best, even when things are hard.</div></div></div>
-            <div class="flip"><div class="flip-in"><div class="face front">Reason 5</div><div class="face back">You remember the little things about clumsy me.</div></div></div>
-            <div class="flip"><div class="flip-in"><div class="face front">Reason 6</div><div class="face back">You make me feel loved so naturally that you do not even realize how much you do for me.</div></div></div>
-            <div class="flip"><div class="flip-in"><div class="face front">Reason 7</div><div class="face back">You make me feel understood.</div></div></div>
-            <div class="flip"><div class="flip-in"><div class="face front">Reason 8</div><div class="face back">You are stronger than you realize.</div></div></div>
-            <div class="flip"><div class="flip-in"><div class="face front">Reason 9</div><div class="face back">You have the kindest heart I've ever known.</div></div></div>
-            <div class="flip"><div class="flip-in"><div class="face front">Reason 10</div><div class="face back">Your happiness means a lot to me.</div></div></div>
-            <div class="flip"><div class="flip-in"><div class="face front">Reason 11</div><div class="face back">You make me feel at home no matter where we are.</div></div></div>
-            <div class="flip"><div class="flip-in"><div class="face front">Reason 12</div><div class="face back">You are incredibly adorable without even realizing it.</div></div></div>
-            <div class="flip"><div class="flip-in"><div class="face front">Reason 13</div><div class="face back">You handle challenges with courage.</div></div></div>
-            <div class="flip"><div class="flip-in"><div class="face front">Reason 14</div><div class="face back">You are the first person I want to share good news with.</div></div></div>
-            <div class="flip"><div class="flip-in"><div class="face front">Reason 15</div><div class="face back">I can be completely myself around you.</div></div></div>
-            <div class="flip"><div class="flip-in"><div class="face front">Reason 16</div><div class="face back">Your hugs feel like therapy.</div></div></div>
-            <div class="flip"><div class="flip-in"><div class="face front">Reason 17</div><div class="face back">You are my favorite notification.</div></div></div>
-            <div class="flip"><div class="flip-in"><div class="face front">Reason 18</div><div class="face back">You believe in me when I doubt myself.</div></div></div>
-            <div class="flip"><div class="flip-in"><div class="face front">Reason 19</div><div class="face back">Your laughter is my favourite sound in the world.</div></div></div>
-            <div class="flip"><div class="flip-in"><div class="face front">Reason 20</div><div class="face back">You make even an ordinary night drive feel special.</div></div></div>
-            <div class="flip"><div class="flip-in"><div class="face front">Reason 21</div><div class="face back">How every bike ride feels better with you beside me.</div></div></div>
-            <div class="flip"><div class="flip-in"><div class="face front">Reason 22</div><div class="face back">How even a simple coffee date feels special with you.</div></div></div>
-            <div class="flip"><div class="flip-in"><div class="face front">Reason 23</div><div class="face back">The little traditions and inside jokes that belong just to us.</div></div></div>
+            <div class="flip">
+              <div class="flip-in">
+                <div class="face front">Reason 1</div>
+                <div class="face back">
+                  Your smile can turn my worst day around.
+                </div>
+              </div>
+            </div>
+            <div class="flip">
+              <div class="flip-in">
+                <div class="face front">Reason 2</div>
+                <div class="face back">
+                  You care about your people with your whole heart.
+                </div>
+              </div>
+            </div>
+            <div class="flip">
+              <div class="flip-in">
+                <div class="face front">Reason 3</div>
+                <div class="face back">You are beautiful inside and out.</div>
+              </div>
+            </div>
+            <div class="flip">
+              <div class="flip-in">
+                <div class="face front">Reason 4</div>
+                <div class="face back">
+                  You always try your best, even when things are hard.
+                </div>
+              </div>
+            </div>
+            <div class="flip">
+              <div class="flip-in">
+                <div class="face front">Reason 5</div>
+                <div class="face back">
+                  You remember the little things about clumsy me.
+                </div>
+              </div>
+            </div>
+            <div class="flip">
+              <div class="flip-in">
+                <div class="face front">Reason 6</div>
+                <div class="face back">
+                  You make me feel loved so naturally that you do not even
+                  realize how much you do for me.
+                </div>
+              </div>
+            </div>
+            <div class="flip">
+              <div class="flip-in">
+                <div class="face front">Reason 7</div>
+                <div class="face back">You make me feel understood.</div>
+              </div>
+            </div>
+            <div class="flip">
+              <div class="flip-in">
+                <div class="face front">Reason 8</div>
+                <div class="face back">You are stronger than you realize.</div>
+              </div>
+            </div>
+            <div class="flip">
+              <div class="flip-in">
+                <div class="face front">Reason 9</div>
+                <div class="face back">
+                  You have the kindest heart I've ever known.
+                </div>
+              </div>
+            </div>
+            <div class="flip">
+              <div class="flip-in">
+                <div class="face front">Reason 10</div>
+                <div class="face back">Your happiness means a lot to me.</div>
+              </div>
+            </div>
+            <div class="flip">
+              <div class="flip-in">
+                <div class="face front">Reason 11</div>
+                <div class="face back">
+                  You make me feel at home no matter where we are.
+                </div>
+              </div>
+            </div>
+            <div class="flip">
+              <div class="flip-in">
+                <div class="face front">Reason 12</div>
+                <div class="face back">
+                  You are incredibly adorable without even realizing it.
+                </div>
+              </div>
+            </div>
+            <div class="flip">
+              <div class="flip-in">
+                <div class="face front">Reason 13</div>
+                <div class="face back">You handle challenges with courage.</div>
+              </div>
+            </div>
+            <div class="flip">
+              <div class="flip-in">
+                <div class="face front">Reason 14</div>
+                <div class="face back">
+                  You are the first person I want to share good news with.
+                </div>
+              </div>
+            </div>
+            <div class="flip">
+              <div class="flip-in">
+                <div class="face front">Reason 15</div>
+                <div class="face back">
+                  I can be completely myself around you.
+                </div>
+              </div>
+            </div>
+            <div class="flip">
+              <div class="flip-in">
+                <div class="face front">Reason 16</div>
+                <div class="face back">Your hugs feel like therapy.</div>
+              </div>
+            </div>
+            <div class="flip">
+              <div class="flip-in">
+                <div class="face front">Reason 17</div>
+                <div class="face back">You are my favorite notification.</div>
+              </div>
+            </div>
+            <div class="flip">
+              <div class="flip-in">
+                <div class="face front">Reason 18</div>
+                <div class="face back">
+                  You believe in me when I doubt myself.
+                </div>
+              </div>
+            </div>
+            <div class="flip">
+              <div class="flip-in">
+                <div class="face front">Reason 19</div>
+                <div class="face back">
+                  Your laughter is my favourite sound in the world.
+                </div>
+              </div>
+            </div>
+            <div class="flip">
+              <div class="flip-in">
+                <div class="face front">Reason 20</div>
+                <div class="face back">
+                  You make even an ordinary night drive feel special.
+                </div>
+              </div>
+            </div>
+            <div class="flip">
+              <div class="flip-in">
+                <div class="face front">Reason 21</div>
+                <div class="face back">
+                  How every bike ride feels better with you beside me.
+                </div>
+              </div>
+            </div>
+            <div class="flip">
+              <div class="flip-in">
+                <div class="face front">Reason 22</div>
+                <div class="face back">
+                  How even a simple coffee date feels special with you.
+                </div>
+              </div>
+            </div>
+            <div class="flip">
+              <div class="flip-in">
+                <div class="face front">Reason 23</div>
+                <div class="face back">
+                  The little traditions and inside jokes that belong just to us.
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -3205,93 +4755,249 @@
       </section>
 
       <div class="couple-section">
-      <section
-        class="reveal"
-        hidden
-        id="s-together"
-      >
-        <div class="content">
-          <div class="eyebrow">Every single day</div>
-          <h2>Together for</h2>
-          <div class="countdown" id="tgBox">
-            <div class="time">
-              <strong id="tgD">0</strong><small>DAYS</small>
+        <section class="reveal" hidden id="s-together">
+          <div class="content">
+            <div class="eyebrow">Every single day</div>
+            <h2>Together for</h2>
+            <div class="countdown" id="tgBox">
+              <div class="time">
+                <strong id="tgD">0</strong><small>DAYS</small>
+              </div>
+              <div class="time">
+                <strong id="tgH">00</strong><small>HOURS</small>
+              </div>
+              <div class="time">
+                <strong id="tgM">00</strong><small>MINS</small>
+              </div>
+              <div class="time">
+                <strong id="tgS">00</strong><small>SECS</small>
+              </div>
             </div>
-            <div class="time">
-              <strong id="tgH">00</strong><small>HOURS</small>
-            </div>
-            <div class="time">
-              <strong id="tgM">00</strong><small>MINS</small>
-            </div>
-            <div class="time">
-              <strong id="tgS">00</strong><small>SECS</small>
+            <p id="tgSub" style="margin-top: 22px">
+              since 29 November 2025, 6:46 PM ♡
+            </p>
+          </div>
+        </section>
+
+        <section class="reveal" id="s-timeline">
+          <div class="content">
+            <div class="eyebrow">How we got here</div>
+            <h2>Our story so far</h2>
+            <div class="tl" id="timeline"></div>
+          </div>
+        </section>
+
+        <section class="reveal" id="s-us">
+          <div class="content">
+            <div class="eyebrow">Little pieces of us</div>
+            <h2>Our memories</h2>
+            <p class="memory-note">A few of my favourite pieces of us ♡</p>
+            <div class="gallery">
+              <div class="photo">
+                <img
+                  alt="Our favourite moment"
+                  loading="lazy"
+                  width="1200"
+                  height="675"
+                  src="assets/memory-1.jpg"
+                />
+                <span class="cap">Our favourite moment 📷</span>
+              </div>
+              <div class="photo">
+                <img
+                  alt="Your prettiest smile"
+                  loading="lazy"
+                  width="800"
+                  height="1067"
+                  src="assets/memory-2.jpg"
+                />
+                <span class="cap">Your prettiest smile 🌷</span>
+              </div>
+              <div class="photo">
+                <img
+                  alt="A memory I never want to forget"
+                  loading="lazy"
+                  width="800"
+                  height="1067"
+                  src="assets/memory-3.jpg"
+                />
+                <span class="cap">A memory I never want to forget 💗</span>
+              </div>
             </div>
           </div>
-          <p id="tgSub" style="margin-top: 22px">
-            since 29 November 2025, 6:46 PM ♡
-          </p>
-        </div>
-      </section>
+        </section>
 
-      <section class="reveal" id="s-timeline">
-        <div class="content">
-          <div class="eyebrow">How we got here</div>
-          <h2>Our story so far</h2>
-          <div class="tl" id="timeline"></div>
-        </div>
-      </section>
-
-      <section class="reveal" id="s-us">
-        <div class="content">
-          <div class="eyebrow">Little pieces of us</div>
-          <h2>Our memories</h2>
-          <p class="memory-note">A few of my favourite pieces of us ♡</p>
-          <div class="gallery">
-            <div class="photo">
-              <img alt="Our favourite moment" loading="lazy" width="1200" height="675" src="assets/memory-1.jpg" />
-              <span class="cap">Our favourite moment 📷</span>
-            </div>
-            <div class="photo">
-              <img alt="Your prettiest smile" loading="lazy" width="800" height="1067" src="assets/memory-2.jpg" />
-              <span class="cap">Your prettiest smile 🌷</span>
-            </div>
-            <div class="photo">
-              <img alt="A memory I never want to forget" loading="lazy" width="800" height="1067" src="assets/memory-3.jpg" />
-              <span class="cap">A memory I never want to forget 💗</span>
-            </div>
+        <section class="reveal" hidden id="s-slides">
+          <div class="slides-bg" aria-hidden="true">
+            <div class="slides-bg-layer" data-bg-layer="0"></div>
+            <div class="slides-bg-layer" data-bg-layer="1"></div>
+            <div class="slides-bg-wash"></div>
           </div>
-        </div>
-      </section>
-
-      <section class="reveal" hidden id="s-slides">
-        <div class="slides-bg" aria-hidden="true"><div class="slides-bg-layer" data-bg-layer="0"></div><div class="slides-bg-layer" data-bg-layer="1"></div><div class="slides-bg-wash"></div></div>
-        <div class="content">
-          <div class="eyebrow">More of us</div>
-          <h2>Our moments</h2>
-          <div class="slides" id="slides" tabindex="0" role="group" aria-label="Photo carousel — drag the photos, tap any side photo to bring it to the centre, or use the arrows to browse"></div><div class="slide-ui" id="slideUi" hidden><div class="slide-progress" role="progressbar" aria-label="Slideshow progress" aria-valuemin="1" aria-valuemax="19" aria-valuenow="1" id="slideProg"><i id="slideProgBar"></i></div><div class="slide-dots" id="slideDots"></div></div><div class="slides-src" id="slidesSrc" hidden>
-            <img alt="Side by side, always 👟" loading="eager" fetchpriority="high" width="675" height="1200" src="assets/moment-01.jpg" />
-            <img alt="Your beautiful smile 🌷" loading="eager" width="900" height="1200" src="assets/moment-02.jpg" />
-            <img alt="My favourite place is next to you 💗" loading="eager" width="900" height="1200" src="assets/moment-03.jpg" />
-            <img alt="Us, just being us 📷" loading="eager" width="900" height="506" src="assets/moment-04.jpg" />
-            <img alt="Smiling because of you ✨" loading="eager" width="675" height="1200" src="assets/moment-05.jpg" />
-            <img alt="Wherever we go, together 👟" loading="eager" width="675" height="1200" src="assets/moment-06.jpg" />
-            <img alt="Sweet moments with you 🎂" loading="eager" width="675" height="1200" src="assets/moment-08.jpg" />
-            <img alt="Close to you 💞" loading="eager" width="900" height="1200" src="assets/moment-09.jpg" />
-            <img alt="You and me 🌸" loading="eager" width="600" height="842" src="assets/moment-10.jpg" />
-            <img alt="Flowers for you 💐" loading="eager" width="900" height="1200" src="assets/moment-11.jpg" />
-            <img alt="Perfect together 🖤" loading="eager" width="900" height="1200" src="assets/moment-12.jpg" />
-            <img alt="Her sunflower moment 🌻" loading="eager" width="1000" height="563" src="assets/moment-14.jpg" />
-            <img alt="Us, always ♡" loading="eager" width="563" height="1000" src="assets/moment-15.jpg" />
-            <img alt="Her, in her moment 🌸" loading="eager" width="563" height="1000" src="assets/moment-16.jpg" />
-            <img alt="You, in black 🖤" loading="eager" width="750" height="1000" src="assets/moment-17.jpg" />
-            <img alt="Golden hour, and her 🌅" loading="eager" width="750" height="1000" src="assets/moment-18.jpg" />
-            <img alt="Sunshine, just being herself ☀️" loading="eager" width="739" height="1000" src="assets/moment-19.jpg" />
-            <img alt="That smile says everything 🌻" loading="eager" width="563" height="1000" src="assets/moment-20.jpg" />
-            <img alt="You, being you ✨" loading="eager" width="563" height="1000" src="assets/moment-21.jpg" />
+          <div class="content">
+            <div class="eyebrow">More of us</div>
+            <h2>Our moments</h2>
+            <div
+              class="slides"
+              id="slides"
+              tabindex="0"
+              role="group"
+              aria-label="Photo carousel — drag the photos, tap any side photo to bring it to the centre, or use the arrows to browse"
+            ></div>
+            <div class="slide-ui" id="slideUi" hidden>
+              <div
+                class="slide-progress"
+                role="progressbar"
+                aria-label="Slideshow progress"
+                aria-valuemin="1"
+                aria-valuemax="19"
+                aria-valuenow="1"
+                id="slideProg"
+              >
+                <i id="slideProgBar"></i>
+              </div>
+              <div class="slide-dots" id="slideDots"></div>
+            </div>
+            <div class="slides-src" id="slidesSrc" hidden>
+              <img
+                alt="Side by side, always 👟"
+                loading="eager"
+                fetchpriority="high"
+                width="675"
+                height="1200"
+                src="assets/moment-01.jpg"
+              />
+              <img
+                alt="Your beautiful smile 🌷"
+                loading="eager"
+                width="900"
+                height="1200"
+                src="assets/moment-02.jpg"
+              />
+              <img
+                alt="My favourite place is next to you 💗"
+                loading="eager"
+                width="900"
+                height="1200"
+                src="assets/moment-03.jpg"
+              />
+              <img
+                alt="Us, just being us 📷"
+                loading="eager"
+                width="900"
+                height="506"
+                src="assets/moment-04.jpg"
+              />
+              <img
+                alt="Smiling because of you ✨"
+                loading="eager"
+                width="675"
+                height="1200"
+                src="assets/moment-05.jpg"
+              />
+              <img
+                alt="Wherever we go, together 👟"
+                loading="eager"
+                width="675"
+                height="1200"
+                src="assets/moment-06.jpg"
+              />
+              <img
+                alt="Sweet moments with you 🎂"
+                loading="eager"
+                width="675"
+                height="1200"
+                src="assets/moment-08.jpg"
+              />
+              <img
+                alt="Close to you 💞"
+                loading="eager"
+                width="900"
+                height="1200"
+                src="assets/moment-09.jpg"
+              />
+              <img
+                alt="You and me 🌸"
+                loading="eager"
+                width="600"
+                height="842"
+                src="assets/moment-10.jpg"
+              />
+              <img
+                alt="Flowers for you 💐"
+                loading="eager"
+                width="900"
+                height="1200"
+                src="assets/moment-11.jpg"
+              />
+              <img
+                alt="Perfect together 🖤"
+                loading="eager"
+                width="900"
+                height="1200"
+                src="assets/moment-12.jpg"
+              />
+              <img
+                alt="Her sunflower moment 🌻"
+                loading="eager"
+                width="1000"
+                height="563"
+                src="assets/moment-14.jpg"
+              />
+              <img
+                alt="Us, always ♡"
+                loading="eager"
+                width="563"
+                height="1000"
+                src="assets/moment-15.jpg"
+              />
+              <img
+                alt="Her, in her moment 🌸"
+                loading="eager"
+                width="563"
+                height="1000"
+                src="assets/moment-16.jpg"
+              />
+              <img
+                alt="You, in black 🖤"
+                loading="eager"
+                width="750"
+                height="1000"
+                src="assets/moment-17.jpg"
+              />
+              <img
+                alt="Golden hour, and her 🌅"
+                loading="eager"
+                width="750"
+                height="1000"
+                src="assets/moment-18.jpg"
+              />
+              <img
+                alt="Sunshine, just being herself ☀️"
+                loading="eager"
+                width="739"
+                height="1000"
+                src="assets/moment-19.jpg"
+              />
+              <img
+                alt="That smile says everything 🌻"
+                loading="eager"
+                width="563"
+                height="1000"
+                src="assets/moment-20.jpg"
+              />
+              <img
+                alt="You, being you ✨"
+                loading="eager"
+                width="563"
+                height="1000"
+                src="assets/moment-21.jpg"
+              />
+            </div>
+            <p class="memory-note">
+              Drag the photos, or tap any photo to bring it to the middle ♡
+            </p>
           </div>
-          <p class="memory-note">Drag the photos, or tap any photo to bring it to the middle ♡</p>
-        </div>
-      </section>
+        </section>
       </div>
 
       <section class="reveal" id="s-favs" style="background: #fff0f5">
@@ -3320,9 +5026,9 @@
               <div class="lc-in">
                 <p>Hey Sunshine, 🤍</p>
                 <p>
-                  If I could, I’d honestly come running to you right now.
-                  One tight hug, and I’d just stay there till you stopped
-                  missing me so much.
+                  If I could, I’d honestly come running to you right now. One
+                  tight hug, and I’d just stay there till you stopped missing me
+                  so much.
                 </p>
                 <p>
                   Till that happens, close your eyes for a second, okay? Picture
@@ -3358,10 +5064,10 @@
                 </p>
                 <p>
                   Since I can’t be there, hear me out. You don’t have to be
-                  happy all the time. And you really don’t have to pretend you’re
-                  okay when you’re not. Cry if you need to. Feel overwhelmed
-                  if that is what today feels like. Take some time just for
-                  yourself, that’s completely okay.
+                  happy all the time. And you really don’t have to pretend
+                  you’re okay when you’re not. Cry if you need to. Feel
+                  overwhelmed if that is what today feels like. Take some time
+                  just for yourself, that’s completely okay.
                 </p>
                 <p>
                   I hope you never forget how special you are, even on the days
@@ -3380,8 +5086,8 @@
                   are, as many times as you need to hear it.
                 </p>
                 <p>
-                  You don’t have to get through days like this alone. I’m
-                  always in your corner.
+                  You don’t have to get through days like this alone. I’m always
+                  in your corner.
                 </p>
               </div>
             </div>
@@ -3469,8 +5175,8 @@
             <div class="lc-body">
               <div class="lc-in">
                 <p>
-                  Listen to me properly, my love. You are enough. Exactly as
-                  you are, you really are.
+                  Listen to me properly, my love. You are enough. Exactly as you
+                  are, you really are.
                 </p>
                 <p>
                   On the days you doubt yourself, borrow my eyes for a moment.
@@ -3478,9 +5184,9 @@
                   and kind, someone I could never replace.
                 </p>
                 <p>
-                  Nothing you worry about changes that. It doesn’t change how
-                  I see you, and it doesn’t change how proud I am to have you
-                  in my life. Always. 🤍
+                  Nothing you worry about changes that. It doesn’t change how I
+                  see you, and it doesn’t change how proud I am to have you in
+                  my life. Always. 🤍
                 </p>
               </div>
             </div>
@@ -3490,9 +5196,9 @@
             <div class="lc-body">
               <div class="lc-in">
                 <p>
-                  Look, you’ve got through every hard day life has given you
-                  so far. Every single one of them. This one isn’t going to be
-                  the one that stops you.
+                  Look, you’ve got through every hard day life has given you so
+                  far. Every single one of them. This one isn’t going to be the
+                  one that stops you.
                 </p>
                 <p>
                   Just take it one small step at a time. Rest if you need to,
@@ -3501,8 +5207,8 @@
                   you.
                 </p>
                 <p>
-                  And whatever happens next, you won’t be doing it alone.
-                  I’m with you in this, always. 🌻
+                  And whatever happens next, you won’t be doing it alone. I’m
+                  with you in this, always. 🌻
                 </p>
               </div>
             </div>
@@ -3605,7 +5311,14 @@
           <div class="eyebrow">One last little surprise</div>
           <h2>Something for you</h2>
           <p>There's a little gift waiting for you, Bby.</p>
-          <button class="gift" id="giftBtn" type="button" aria-label="Open your gift">🎁</button>
+          <button
+            class="gift"
+            id="giftBtn"
+            type="button"
+            aria-label="Open your gift"
+          >
+            🎁
+          </button>
           <div id="gift-message" class="soft-card">
             <h2 style="font-size: 45px">For you, Sakshi ♡</h2>
             <p>
@@ -3692,7 +5405,8 @@
       updateCountdown();
       const cdTimer = setInterval(() => {
         updateCountdown();
-        if (new Date() >= new Date("2026-11-20T00:00:00")) clearInterval(cdTimer);
+        if (new Date() >= new Date("2026-11-20T00:00:00"))
+          clearInterval(cdTimer);
       }, 1000);
 
       // ---- Birthday song -------------------------------------------------
@@ -3989,7 +5703,10 @@
         // confetti can burst from exactly where the box was.
         const giftRect = gb ? gb.getBoundingClientRect() : null;
         startGiftBackground();
-        if (gb) { gb.hidden = true; gb.setAttribute("aria-hidden", "true"); }
+        if (gb) {
+          gb.hidden = true;
+          gb.setAttribute("aria-hidden", "true");
+        }
         document.getElementById("gift-message").style.display = "block";
         // Confetti celebration, fired once at the moment of opening and
         // together with the reveal above, it never delays, blocks or
@@ -4009,7 +5726,15 @@
               window.matchMedia &&
               matchMedia("(prefers-reduced-motion: reduce)").matches;
             if (!reduceGift) {
-              const emo = ["\u{1F497}", "\u{1F338}", "\u2728", "\u{1F389}", "\u{1F337}", "\u{1F90D}", "\u2B50"];
+              const emo = [
+                "\u{1F497}",
+                "\u{1F338}",
+                "\u2728",
+                "\u{1F389}",
+                "\u{1F337}",
+                "\u{1F90D}",
+                "\u2B50",
+              ];
               const gx = giftRect
                 ? giftRect.left + giftRect.width / 2
                 : window.innerWidth / 2;
@@ -4023,14 +5748,8 @@
                 b.style.left = gx + "px";
                 b.style.top = gy + "px";
                 b.style.zIndex = "9";
-                b.style.setProperty(
-                  "--x",
-                  Math.random() * 360 - 180 + "px",
-                );
-                b.style.setProperty(
-                  "--y",
-                  -Math.random() * 380 - 40 + "px",
-                );
+                b.style.setProperty("--x", Math.random() * 360 - 180 + "px");
+                b.style.setProperty("--y", -Math.random() * 380 - 40 + "px");
                 document.body.appendChild(b);
                 setTimeout(() => b.remove(), 1700);
               }
@@ -4307,7 +6026,9 @@
         // cannot run on this device.
         msg.style.display = "block";
         const cs2 = document.getElementById("candleStatus");
-        if (cs2) cs2.textContent = "Wish made \u2661 Your candle is out — may every wish come true.";
+        if (cs2)
+          cs2.textContent =
+            "Wish made \u2661 Your candle is out — may every wish come true.";
         try {
           startSong();
         } catch (err) {}
@@ -4329,7 +6050,14 @@
         try {
           celebrate();
         } catch (err) {}
-        const emo = ["\u{1F497}", "\u{1F338}", "\u2728", "\u{1F389}", "\u{1F337}", "\u{1F98B}"];
+        const emo = [
+          "\u{1F497}",
+          "\u{1F338}",
+          "\u2728",
+          "\u{1F389}",
+          "\u{1F337}",
+          "\u{1F98B}",
+        ];
         for (let i = 0; i < 30; i++) {
           const b = document.createElement("span");
           b.className = "burst";
@@ -4651,9 +6379,7 @@
               '<div class="tl-i"><span class="tl-dot">' +
               i.i +
               "</span>" +
-              (i.d
-                ? '<div class="tl-d">' + i.d + "</div>"
-                : "") +
+              (i.d ? '<div class="tl-d">' + i.d + "</div>" : "") +
               '<div class="tl-t">' +
               i.t +
               "</div><p>" +
@@ -4745,7 +6471,10 @@
           d.type = "button";
           d.setAttribute("aria-label", "Go to photo " + (i + 1));
           if (i === 0) d.className = "on";
-          d.addEventListener("click", (e) => { e.stopPropagation(); goSlide(i); });
+          d.addEventListener("click", (e) => {
+            e.stopPropagation();
+            goSlide(i);
+          });
           dotsBox.appendChild(d);
           return d;
         });
@@ -4877,7 +6606,9 @@
         const cumTable = () => {
           const t = slideSizes.length || 1;
           let avgW = 0;
-          slideSizes.forEach((s) => { avgW += s.w; });
+          slideSizes.forEach((s) => {
+            avgW += s.w;
+          });
           avgW = avgW / t || 300;
           const cum = [0];
           for (let k = 1; k <= Math.ceil(totalSlides() / 2) + 1; k++) {
@@ -5056,8 +6787,7 @@
           const src = bgSrcFor(idx);
           if (!src) return;
           const seq = ++bgSeq;
-          const slideImg =
-            slideEls[idx] && slideEls[idx].querySelector(".fgi");
+          const slideImg = slideEls[idx] && slideEls[idx].querySelector(".fgi");
           // Decode first, paint second: wait until the photo's
           // bitmap is fully decoded (the slide <img> is eager-loaded,
           // and a throwaway Image for the same URL resolves from the
@@ -5229,7 +6959,8 @@
         };
         const syncSlideUI = (near) => {
           cap.textContent = slideEls[near].querySelector(".fgi").alt;
-          $("slideProgBar").style.width = ((near + 1) / slideEls.length) * 100 + "%";
+          $("slideProgBar").style.width =
+            ((near + 1) / slideEls.length) * 100 + "%";
           $("slideProg").setAttribute("aria-valuenow", near + 1);
           $("slideProg").setAttribute("aria-valuemax", slideEls.length);
           dots.forEach((d, i) => d.classList.toggle("on", i === near));
@@ -5298,7 +7029,9 @@
           const tick = (now) => {
             if (!posAnim) return;
             const t = Math.min(1, (now - posAnim.start) / posAnim.dur);
-            renderPos(posAnim.from + (posAnim.to - posAnim.from) * easeInOut(t));
+            renderPos(
+              posAnim.from + (posAnim.to - posAnim.from) * easeInOut(t),
+            );
             if (t < 1) {
               posRaf = requestAnimationFrame(tick);
             } else {
@@ -5327,7 +7060,10 @@
           const targetIdx = ((n % total) + total) % total;
           const base = Math.round(posFloat);
           const delta = signedDiffCont(targetIdx, base);
-          animatePosTo(base + delta, durForDist(Math.max(1, Math.abs(delta)) || 1));
+          animatePosTo(
+            base + delta,
+            durForDist(Math.max(1, Math.abs(delta)) || 1),
+          );
         }
         window.nextSlide = () => goSlide(slideIdx + 1);
         // Subtle ‹ › arrows at the sides of the stage, like the
@@ -5436,15 +7172,17 @@
           }, 450);
           if (cancelled) {
             // Settle to the nearest photo to where the drag died.
-            animatePosTo(Math.round(posFloat), durForDist(Math.abs(posFloat - Math.round(posFloat))) || 350);
+            animatePosTo(
+              Math.round(posFloat),
+              durForDist(Math.abs(posFloat - Math.round(posFloat))) || 350,
+            );
             return;
           }
           // Settle to the NEAREST photo to the released CONTINUOUS
           // position — a long drag across the stage can pass more
           // than one photo — with a modest momentum contribution:
           // release velocity projected ~150ms further along.
-          const projected =
-            posFloat + (-dragVelX * 150) / (dragStep || 160);
+          const projected = posFloat + (-dragVelX * 150) / (dragStep || 160);
           const target = Math.round(projected);
           animatePosTo(
             target,
@@ -5524,8 +7262,7 @@
           if (e.pointerType === "touch") return;
           if (dragId !== null) return;
           if (e.pointerType === "mouse" && e.button !== 0) return;
-          if (e.target.closest && e.target.closest(".slide-arrow"))
-            return;
+          if (e.target.closest && e.target.closest(".slide-arrow")) return;
           if (!e.target.closest || !e.target.closest(".sl")) return;
           beginDrag(e.pointerId, "pointer", e.clientX, e.clientY);
           // Pointer capture is taken only once a real horizontal
@@ -5533,7 +7270,12 @@
           // normal click target on the photo and still advances.
         });
         slideBox.addEventListener("pointermove", (e) => {
-          if (dragId === null || dragKind !== "pointer" || e.pointerId !== dragId) return;
+          if (
+            dragId === null ||
+            dragKind !== "pointer" ||
+            e.pointerId !== dragId
+          )
+            return;
           if (moveDrag(e.clientX, e.clientY) && dragActive) {
             try {
               slideBox.setPointerCapture(e.pointerId);
@@ -5541,11 +7283,21 @@
           }
         });
         slideBox.addEventListener("pointerup", (e) => {
-          if (dragId === null || dragKind !== "pointer" || e.pointerId !== dragId) return;
+          if (
+            dragId === null ||
+            dragKind !== "pointer" ||
+            e.pointerId !== dragId
+          )
+            return;
           endDrag(false);
         });
         slideBox.addEventListener("pointercancel", (e) => {
-          if (dragId === null || dragKind !== "pointer" || e.pointerId !== dragId) return;
+          if (
+            dragId === null ||
+            dragKind !== "pointer" ||
+            e.pointerId !== dragId
+          )
+            return;
           endDrag(true);
         });
         // Fingers via Touch Events — the reliable path on phones.
@@ -5553,13 +7305,10 @@
           "touchstart",
           (e) => {
             if (dragId !== null) return;
-            if (!e.changedTouches || e.changedTouches.length !== 1)
-              return;
+            if (!e.changedTouches || e.changedTouches.length !== 1) return;
             const host = e.target;
-            if (host && host.closest && host.closest(".slide-arrow"))
-              return;
-            if (!host || !host.closest || !host.closest(".sl"))
-              return;
+            if (host && host.closest && host.closest(".slide-arrow")) return;
+            if (!host || !host.closest || !host.closest(".sl")) return;
             const t = e.changedTouches[0];
             beginDrag(t.identifier, "touch", t.clientX, t.clientY);
           },
@@ -5587,8 +7336,7 @@
           if (dragId === null || dragKind !== "touch") return;
           let found = false;
           for (let i = 0; i < e.changedTouches.length; i++) {
-            if (e.changedTouches[i].identifier === dragId)
-              found = true;
+            if (e.changedTouches[i].identifier === dragId) found = true;
           }
           if (!found) return;
           endDrag(cancelled);
@@ -5739,8 +7487,14 @@
           if (e.target !== slideBox) return;
           // Arrow keys only: Enter/Space must not advance, matching
           // the centre photo doing nothing on click/tap.
-          if (e.key === "ArrowRight") { e.preventDefault(); goSlide(slideIdx + 1); }
-          if (e.key === "ArrowLeft") { e.preventDefault(); goSlide(slideIdx - 1); }
+          if (e.key === "ArrowRight") {
+            e.preventDefault();
+            goSlide(slideIdx + 1);
+          }
+          if (e.key === "ArrowLeft") {
+            e.preventDefault();
+            goSlide(slideIdx - 1);
+          }
         });
         paintSlide();
         armSlide();
@@ -5891,16 +7645,25 @@
           card.tabIndex = 0;
           card.setAttribute("role", "button");
           card.setAttribute("aria-pressed", "false");
-          card.setAttribute("aria-label", "Reason " + (i + 1) + " — activate to flip");
+          card.setAttribute(
+            "aria-label",
+            "Reason " + (i + 1) + " — activate to flip",
+          );
           const flipIt = () => {
             const willOpen = !card.classList.contains("on");
-            cardsBox.querySelectorAll(".flip.on").forEach((o) => { o.classList.remove("on"); o.setAttribute("aria-pressed", "false"); });
+            cardsBox.querySelectorAll(".flip.on").forEach((o) => {
+              o.classList.remove("on");
+              o.setAttribute("aria-pressed", "false");
+            });
             card.classList.toggle("on", willOpen);
             card.setAttribute("aria-pressed", String(willOpen));
           };
           card.addEventListener("click", flipIt);
           card.addEventListener("keydown", (e) => {
-            if (e.key === "Enter" || e.key === " ") { e.preventDefault(); flipIt(); }
+            if (e.key === "Enter" || e.key === " ") {
+              e.preventDefault();
+              flipIt();
+            }
           });
         });
       }
@@ -5908,14 +7671,20 @@
         c.tabIndex = 0;
         c.setAttribute("role", "button");
         c.setAttribute("aria-pressed", "false");
-        c.setAttribute("aria-label", "Coupon " + (i + 1) + " — activate to redeem");
+        c.setAttribute(
+          "aria-label",
+          "Coupon " + (i + 1) + " — activate to redeem",
+        );
         const redeem = () => {
           c.classList.toggle("used");
           c.setAttribute("aria-pressed", String(c.classList.contains("used")));
         };
         c.addEventListener("click", redeem);
         c.addEventListener("keydown", (e) => {
-          if (e.key === "Enter" || e.key === " ") { e.preventDefault(); redeem(); }
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            redeem();
+          }
         });
       });
       document.querySelectorAll("#s-open .lc").forEach((l) => {
@@ -5933,7 +7702,10 @@
         };
         l.addEventListener("click", toggle);
         l.addEventListener("keydown", (e) => {
-          if (e.key === "Enter" || e.key === " ") { e.preventDefault(); toggle(); }
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            toggle();
+          }
         });
       });
       const giftBtn = $("giftBtn");
@@ -5964,7 +7736,8 @@
       (function () {
         var SRC = "assets/birthday-song.mp3";
         try {
-          if (typeof CONFIG !== "undefined" && CONFIG.songSrc) SRC = CONFIG.songSrc;
+          if (typeof CONFIG !== "undefined" && CONFIG.songSrc)
+            SRC = CONFIG.songSrc;
         } catch (e) {}
         var btn = document.getElementById("musicBtn");
         if (!btn) return;
@@ -5979,10 +7752,10 @@
         // (the candle blow's start path) and by the blow handlers.
         btn.style.display = "none";
 
-        var on = false;          // the one state flag every tap follows
-        var audio = null;        // the song <audio> element
-        var audioBad = false;    // song file failed on this device
-        var ctx = null;          // synth fallback context
+        var on = false; // the one state flag every tap follows
+        var audio = null; // the song <audio> element
+        var audioBad = false; // song file failed on this device
+        var ctx = null; // synth fallback context
         var synthTimer = null;
         var synthNodes = [];
         var primed = false;
@@ -6004,28 +7777,42 @@
           return audio;
         }
         function stopSynth() {
-          if (synthTimer) { clearInterval(synthTimer); synthTimer = null; }
-          synthNodes.forEach(function (o) { try { o.stop(); } catch (e) {} });
+          if (synthTimer) {
+            clearInterval(synthTimer);
+            synthTimer = null;
+          }
+          synthNodes.forEach(function (o) {
+            try {
+              o.stop();
+            } catch (e) {}
+          });
           synthNodes = [];
         }
         function startSynth() {
           try {
-            if (!ctx) ctx = new (window.AudioContext || window.webkitAudioContext)();
+            if (!ctx)
+              ctx = new (window.AudioContext || window.webkitAudioContext)();
             if (ctx.state === "suspended") ctx.resume();
             if (synthTimer) return;
-            var notes = [523.25, 659.25, 783.99, 659.25, 587.33, 698.46, 783.99, 1046.5];
+            var notes = [
+              523.25, 659.25, 783.99, 659.25, 587.33, 698.46, 783.99, 1046.5,
+            ];
             var cycle = function () {
               if (ctx.state === "suspended") ctx.resume();
               synthNodes = [];
               notes.forEach(function (f, i) {
-                var o = ctx.createOscillator(), g = ctx.createGain();
-                o.type = "sine"; o.frequency.value = f;
+                var o = ctx.createOscillator(),
+                  g = ctx.createGain();
+                o.type = "sine";
+                o.frequency.value = f;
                 var t = ctx.currentTime + 0.05 + i * 0.55;
                 g.gain.setValueAtTime(0, t);
                 g.gain.linearRampToValueAtTime(0.06, t + 0.08);
                 g.gain.exponentialRampToValueAtTime(0.001, t + 0.5);
-                o.connect(g); g.connect(ctx.destination);
-                o.start(t); o.stop(t + 0.52);
+                o.connect(g);
+                g.connect(ctx.destination);
+                o.start(t);
+                o.stop(t + 0.52);
                 synthNodes.push(o);
               });
             };
@@ -6035,7 +7822,10 @@
         }
         function playNow() {
           var a = ensureAudio();
-          if (!a) { startSynth(); return; }
+          if (!a) {
+            startSynth();
+            return;
+          }
           try {
             var pr = a.play();
             if (pr && typeof pr.catch === "function") {
@@ -6058,44 +7848,83 @@
           // funnels through start() -> apply()), so the button
           // appears at the exact moment the song starts and then
           // stays visible for the rest of the session.
-          if (on) { try { btn.style.display = ""; } catch (e) {} }
+          if (on) {
+            try {
+              btn.style.display = "";
+            } catch (e) {}
+          }
           if (!on) {
-            if (audio) { try { audio.pause(); } catch (e) {} }
+            if (audio) {
+              try {
+                audio.pause();
+              } catch (e) {}
+            }
             stopSynth();
             return;
           }
-          if (audioBad) { startSynth(); return; }
+          if (audioBad) {
+            startSynth();
+            return;
+          }
           if (audio && !audio.paused) return;
           if (synthTimer) return;
           playNow();
         }
-        function toggle() { on = !on; apply(); }
-        function start() { if (!on) { on = true; } apply(); }
-        function stop() { on = false; apply(); }
+        function toggle() {
+          on = !on;
+          apply();
+        }
+        function start() {
+          if (!on) {
+            on = true;
+          }
+          apply();
+        }
+        function stop() {
+          on = false;
+          apply();
+        }
         function prime() {
           if (primed) return;
           primed = true;
           var a = ensureAudio();
           if (!a) return;
-          try { a.load(); } catch (e) {}
+          try {
+            a.load();
+          } catch (e) {}
           // Unlock on iOS inside the entry tap: muted play, then rewind.
           try {
             a.muted = true;
             var pr = a.play();
             var done = function () {
               a.muted = false;
-              if (!on) { try { a.pause(); a.currentTime = 0; } catch (e) {} }
+              if (!on) {
+                try {
+                  a.pause();
+                  a.currentTime = 0;
+                } catch (e) {}
+              }
             };
             if (pr && typeof pr.then === "function") pr.then(done, done);
             else done();
-          } catch (e) { a.muted = false; }
+          } catch (e) {
+            a.muted = false;
+          }
         }
-        btn.addEventListener("click", function (e) {
-          e.stopPropagation();
-          // Resume a suspended synth context inside the gesture (iOS).
-          if (ctx && ctx.state === "suspended") { try { ctx.resume(); } catch (err) {} }
-          toggle();
-        }, false);
+        btn.addEventListener(
+          "click",
+          function (e) {
+            e.stopPropagation();
+            // Resume a suspended synth context inside the gesture (iOS).
+            if (ctx && ctx.state === "suspended") {
+              try {
+                ctx.resume();
+              } catch (err) {}
+            }
+            toggle();
+          },
+          false,
+        );
         btn.setAttribute("aria-pressed", "false");
         window.toggleMusic = toggle;
         window.startSong = start;
